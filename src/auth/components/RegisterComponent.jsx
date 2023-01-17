@@ -1,9 +1,26 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import { useForm } from '../../hooks'
 
 import './login.css'
 
+const registerFormFields = {
+    registerName: '',
+    registerEmail: '',
+    registerPassword: '',
+    registerPassword2: ''
+}
+
+
 export const RegisterComponent = () => {
+
+    const {registerName,registerEmail,registerPassword,registerPassword2,onInputChange    }= useForm (registerFormFields);
+
+    const registerSubmit = (e) => {
+        e.preventDefault();
+        console.log(registerName , registerEmail, registerPassword, registerPassword2);     
+    }
+    
   return (
     <>
     <div className="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
@@ -25,12 +42,15 @@ export const RegisterComponent = () => {
 
                 <div className="col-md-6 login-form-2">
                     <h3>Registro  de usuario COA </h3>
-                    <form>
+                    <form onSubmit={registerSubmit}>
                         <div className="form-group mb-2">
                             <input
                                 type="text"
                                 className="form-control"
                                 placeholder="Nombre"
+                                name='registerName'
+                                value={registerName}
+                                onChange={onInputChange}    
                             />
                         </div>
                         <div className="form-group mb-2">
@@ -38,6 +58,9 @@ export const RegisterComponent = () => {
                                 type="email"
                                 className="form-control"
                                 placeholder="Correo"
+                                name='registerEmail'
+                                value={registerEmail}
+                                onChange={onInputChange}
                             />
                         </div>
                         <div className="form-group mb-2">
@@ -45,6 +68,9 @@ export const RegisterComponent = () => {
                                 type="password"
                                 className="form-control"
                                 placeholder="Contraseña" 
+                                name='registerPassword'
+                                value={registerPassword}
+                                onChange={onInputChange}
                             />
                         </div>
 
@@ -53,6 +79,9 @@ export const RegisterComponent = () => {
                                 type="password"
                                 className="form-control"
                                 placeholder="Repita la contraseña" 
+                                name='registerPassword2'
+                                value={registerPassword2}
+                                onChange={onInputChange}
                             />
                         </div>
 
@@ -71,4 +100,5 @@ export const RegisterComponent = () => {
   </>
   )
 }
+
 

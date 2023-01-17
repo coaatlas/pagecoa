@@ -1,9 +1,28 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import { useAuthStore, useForm } from '../../hooks'
 
 import './login.css'
 
+
+const loginFormFields = {
+    loginEmail: '',
+    loginPassword: ''
+}
+
+
 export const LoginComponets = () => {
+ 
+    const{ startLogin }=useAuthStore();
+
+    const {loginEmail,loginPassword,onInputChange    }= useForm (loginFormFields);
+
+    const LoginSubmit = (e) => {
+        e.preventDefault();
+        startLogin({email:loginEmail,password:loginPassword})
+    }
+
+
   return (
     <>
     <br />
@@ -20,12 +39,15 @@ export const LoginComponets = () => {
 
           <div className="col-md-6 login-form-1">
                     <h3>Ingreso</h3>
-                    <form>
+                    <form onSubmit={LoginSubmit}>
                         <div className="form-group mb-2">
                             <input 
                                 type="text"
                                 className="form-control"
                                 placeholder="Correo"
+                                name='loginEmail'
+                                value={loginEmail}
+                                onChange={onInputChange}
                             />
                         </div>
                         <div className="form-group mb-2">
@@ -33,6 +55,9 @@ export const LoginComponets = () => {
                                 type="password"
                                 className="form-control"
                                 placeholder="Contraseña"
+                                name='loginPassword'
+                                value={loginPassword}
+                                onChange={onInputChange}
                             />
                         </div>
                         <div className="form-group mb-2">
