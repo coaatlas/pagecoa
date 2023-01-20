@@ -26,25 +26,38 @@ export const CalendarEvent = ({ event }) => {
     style={{color: 'red',
     fontWeight: 'bold',
     fontSize: '14px'}}
-    >{title}</h5>
+    > <span   style={{color: 'black',
+    fontWeight: 'bold',
+    fontSize: '13px'}}
+    >Titulo: </span>{title}</h5>
 
-    <p className="card-text"
+    <h5 className="card-text"
     style={{color: 'black',
     fontWeight: 'bold',
     fontSize: '13px'}}
-    >{notes}</p>
-
-    <p className="card-text"
-    style={{color: 'black',
-    fontWeight: 'bold',
+    > <span   style={{color: 'black',
+    fontWeight: 'normal',
     fontSize: '13px'}}
-    >{amount}</p>
+    >Descripción: </span>{notes}</h5>
+
    
     <p className="card-text"
     style={{color: 'black',
     fontWeight: 'bold',
     fontSize: '13px'}}
-    >{user.name}</p>
+    > <span   style={{color: 'black',
+    fontWeight: 'bold',
+    fontSize: '13px'}}
+    >monto: </span>{amount}</p>
+   
+    <p className="card-text"
+    style={{color: 'black',
+    fontWeight: 'bold',
+    fontSize: '13px'}}
+    > <span   style={{color: 'black',
+    fontWeight: 'bold',
+    fontSize: '13px'}}
+    >ingresado por: </span>{user.name}</p>
    
   
     </div>
