@@ -3,9 +3,10 @@ import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react'
 import { customFetch } from '../../database/customfech';
 import { BannerComponent } from '../../ui';
-import { CalendarComponents } from '../components/CalendarComponents';
+import { PresupuestoComponent } from '../components/PresupuestoComponent';
 
-export const CalendarPage = () => {
+
+export const PresupuestoPage = () => {
     const [items, setItems] = useState([]); 
     useEffect(() => {
              customFetch(1500,'calendar').then((data) => setItems(data));            
@@ -38,7 +39,13 @@ export const CalendarPage = () => {
     else{
   return (
     <>
-    <CalendarComponents />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <PresupuestoComponent />
     
     </>
   )

@@ -21,16 +21,19 @@ export const CalendarEvent = ({ event }) => {
     }}
     >
     <div className="card-body">
+        
     <h5 className="card-title"
     style={{color: 'red',
     fontWeight: 'bold',
     fontSize: '14px'}}
     >{title}</h5>
+
     <p className="card-text"
     style={{color: 'black',
     fontWeight: 'bold',
     fontSize: '13px'}}
     >{notes}</p>
+
     <p className="card-text"
     style={{color: 'black',
     fontWeight: 'bold',

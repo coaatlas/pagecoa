@@ -5,7 +5,6 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 import { CalendarNavBar } from './CalendarNavBar' ;
 
 import 'react-big-calendar/lib/css/react-big-calendar.css';
-
 import { useUiStore, useCalendarStore } from '../../hooks';
 import { CalendarModal } from './CalendarModal';
 import { FabDelete } from './FabDelete';
@@ -13,7 +12,6 @@ import { FabAddNew } from './FabAddNew';
 
 import { localizer } from '../helpers/CalendarLocalizer';
 import { CalendarEvent } from './CalendarEvent';
-
 import { getMessagesEs } from '../helpers/getMessages';
 
 

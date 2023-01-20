@@ -4,6 +4,7 @@ import { LoginPages } from "../auth/pages/LoginPages";
 import { RegisterPage } from "../auth/pages/RegisterPage";
 import { BlogComponet } from "../calendar/components/BlogComponet";
 import { CalendarPage } from "../calendar/pages/CalendarPage";
+import { PresupuestoPage } from "../calendar/pages/PresupuestoPage";
 import { useAuthStore } from "../hooks";
 import { Baradero,
          CoaVideos,
@@ -68,6 +69,7 @@ export const AppRouter = () => {
         <Route path="/calendar" element={<CalendarPage />} />
         <Route path="/blog" element={<BlogComponet />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/presupuesto" element={<PresupuestoPage />} />
 
         <Route path="/home" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
