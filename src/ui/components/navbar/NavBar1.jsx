@@ -4,8 +4,16 @@ import './navbar.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import confetti from 'canvas-confetti';
 import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
+import { useAuthStore } from '../../../hooks';
 
 export const NavBar1 = () => {
+
+    const {
+        startLogout,
+        user,
+        status,
+
+    } = useAuthStore();
 
   return (
     <>
@@ -110,7 +118,7 @@ export const NavBar1 = () => {
         <div className="collapse navbar-collapse" id="navbarCollapse">
             <div className="navbar-nav ms-auto p-4 p-lg-0">         
           
-            <span className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"    onClick={() => confetti({
+            {/* <span className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"    onClick={() => confetti({
                 particleCount: 900,
                 spread:190,
                 origin: { y: 0.6 },
@@ -143,7 +151,7 @@ export const NavBar1 = () => {
                 fontSize: "30px",
                         }}
             />
-            </span>               
+            </span>                */}
 
             <NavLink to="/home" 
                  className={ ({ isActive }) => `nav-link  dropdownn  ${isActive ? 'active':''}` } >  
@@ -177,16 +185,39 @@ export const NavBar1 = () => {
 
 <NavLink to="/contact"  className={ ({ isActive }) => `nav-link  dropdownn  ${isActive ? 'active ':''}` } >  
             <button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Contact</button></NavLink>
+           {
+                (status === 'not-authenticated' ) ? (
+                    <>
+                    </>
+                   
+                ) : (
+                    <NavLink to="/calendar"  className={ ({ isActive }) => `nav-link  dropdownn  ${isActive ? 'active ':''}` } >
+                     <button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" >
+                    <i className='fas fa-calendar-alt '></i> Calendar
+                    </button>
+                    </NavLink>
+                )
+           }
 
 
+            {
+                (status === 'not-authenticated' ) ? (
+                    <NavLink to="/login"  className={ ({ isActive }) => `nav-link  dropdownn  ${isActive ? 'active ':''}` } > 
+                    <button   data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <i className='fas fa-sign-in-alt'></i>&nbsp;Login</button> 
+                    </NavLink>            
+                    
+                ) : (                      
+                    
+                    <NavLink to="/login"  className={ ({ isActive }) => `nav-link  dropdownn  ${isActive ? 'active ':''}` } > 
+                   <button className='btn btn-outline-danger'  onClick={startLogout}>
+                    <i className='fas fa-sign-out-alt'></i> Logout
+                    </button>
+                   </NavLink>
+                )
 
-            <NavLink to="/login"  className={ ({ isActive }) => `nav-link  dropdownn  ${isActive ? 'active ':''}` } >  
-            <button   data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><i className='fas fa-sign-in-alt'></i>&nbsp;Login</button></NavLink>
-             
-            {/* <button className='btn btn-outline-danger'  >
-      <i className='fas fa-sign-out-alt'></i>
-      <span> Logout</span>
-    </button> */}
+            }
+          
 
    </div>
    </div>

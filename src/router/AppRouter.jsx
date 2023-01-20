@@ -1,8 +1,10 @@
+import { useEffect } from "react";
 import {  Route, Routes } from "react-router-dom"
 import { LoginPages } from "../auth/pages/LoginPages";
 import { RegisterPage } from "../auth/pages/RegisterPage";
 import { BlogComponet } from "../calendar/components/BlogComponet";
 import { CalendarPage } from "../calendar/pages/CalendarPage";
+import { useAuthStore } from "../hooks";
 import { Baradero,
          CoaVideos,
          Contact,
@@ -23,9 +25,37 @@ import {Copirrigth, Footer, NavBar1 } from "../ui"
 
 export const AppRouter = () => {
 
-  const authStatus = 'checking';    // 'checking' | 'auth' | 'not-auth'
+  // const authStatus = 'auth';    // 'checking' | 'auth' | 'not-auth'
+   const {status,checkToken}=useAuthStore();
 
-   
+    useEffect(() => {
+      checkToken();
+    }, [])
+
+
+   if (status==='checking') {
+    return (
+      <>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+        
+
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-6 login-form-1">
+            <h3>Cargando...</h3>
+          </div>
+        </div>
+      </div>
+
+      </>
+    )
+   }
   
   return (
    <>      
@@ -33,7 +63,7 @@ export const AppRouter = () => {
   
     <Routes>
       {
-        authStatus === 'auth' ?
+        status === 'authenticated' ?
         <>
         <Route path="/calendar" element={<CalendarPage />} />
         <Route path="/blog" element={<BlogComponet />} />

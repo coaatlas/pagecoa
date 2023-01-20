@@ -1,13 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useAuthStore } from '../../hooks';
 
 export const CalendarNavBar = () => {
+
+  const { startLogout,  user  } = useAuthStore();
+
+
   return (
     <>
     <div className='navbar navbar-dark bg-dark mb-4 px-4' >
     <span  >
-      <i className='fas fa-calendar-alt fa-2x' >&nbsp;COA</i>
-      
+      <i className='fas fa-calendar-alt fa-2x' >&nbsp;{user.name} </i>      
     </span>
    
  
@@ -15,36 +19,22 @@ export const CalendarNavBar = () => {
       style={{
         display: 'flex',
         justifyContent: 'space-between ',
-        alignItems: 'center',      
-    
-      }}
-    
-
-      >
+        alignItems: 'center',       
+      }}  >
  
  <button className='btn btn-outline-danger'>
  <Link  to="/register"
  style={{
   textDecoration: 'none',
   color: 'white',
-}}
-
-
- >   <i className="fas fa-user-plus"></i>
+}} >   <i className="fas fa-user-plus"></i>
   <span> Registro </span> </Link>
     </button>
-    &nbsp;    
-    <button className='btn btn-outline-danger'>
-      <i className='fas fa-sign-out-alt'></i>
-      <span> Logout</span>
-    </button>
+    &nbsp;  
+
+
+
     </div>
-
-    
-
-
-    
-
      </div>
     </>
    

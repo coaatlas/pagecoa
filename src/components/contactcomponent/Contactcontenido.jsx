@@ -8,7 +8,7 @@ export const Contactcontenido = () => {
     const [items, setItems] = useState([]); 
 
     useEffect(() => {
-        customFetch(2000,'contact').then((data) => setItems(data));
+        customFetch(1600,'contact').then((data) => setItems(data));
      }, []);
   
     if (items.length === 0) {

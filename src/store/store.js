@@ -5,9 +5,6 @@ import { calendarSlice } from './calendar/calendarSlice';
 import { uiSlice } from './ui/uiSlice';
 
 
-
-
-
 export const store = configureStore({
     reducer: {
         calendar: calendarSlice.reducer,

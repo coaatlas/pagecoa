@@ -9,7 +9,7 @@ import { CalendarComponents } from '../components/CalendarComponents';
 export const CalendarPage = () => {
     const [items, setItems] = useState([]); 
     useEffect(() => {
-             customFetch(3000,'calendar').then((data) => setItems(data));            
+             customFetch(1500,'calendar').then((data) => setItems(data));            
      }, [items]);
   
     if (items.length === 0) {

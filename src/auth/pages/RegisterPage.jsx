@@ -11,7 +11,7 @@ export const RegisterPage = () => {
     
   const [items, setItems] = useState([]); 
   useEffect(() => {
-           customFetch(3000,'login').then((data) => setItems(data));            
+           customFetch(1500,'register').then((data) => setItems(data));            
    }, [items]);
 
   if (items.length === 0) {

@@ -10,7 +10,7 @@ export const LoginPages = () => {
     
   const [items, setItems] = useState([]); 
   useEffect(() => {
-           customFetch(3000,'login').then((data) => setItems(data));            
+           customFetch(1500,'login').then((data) => setItems(data));            
    }, [items]);
 
   if (items.length === 0) {

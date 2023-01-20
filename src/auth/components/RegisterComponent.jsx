@@ -1,7 +1,6 @@
-import React from 'react'
-
-import { useForm } from '../../hooks'
-
+import React, { useEffect } from 'react'
+import Swal from 'sweetalert2'
+import { useAuthStore, useForm } from '../../hooks'
 import './login.css'
 
 const registerFormFields = {
@@ -13,29 +12,36 @@ const registerFormFields = {
 
 
 export const RegisterComponent = () => {
+    const{ startRegister,errorMesaage }=useAuthStore();
+    const {registerName,registerEmail,registerPassword,registerPassword2,onInputChange}= useForm (registerFormFields);
 
-    const {registerName,registerEmail,registerPassword,registerPassword2,onInputChange    }= useForm (registerFormFields);
+//===============RegisterSubmit======================================
 
     const registerSubmit = (e) => {
         e.preventDefault();
-        console.log(registerName , registerEmail, registerPassword, registerPassword2);     
+        if (registerPassword !== registerPassword2) {
+            Swal.fire('Error', 'Las contraseñas deben ser iguales', 'error')
+            return;
+        }
+        startRegister({name:registerName ,email: registerEmail,password: registerPassword});     
     }
+
+
+    useEffect(() => {
+        if (errorMesaage) {
+            Swal.fire( 'error',errorMesaage, 'error')
+        }
+    }, [errorMesaage])
+
+
     
   return (
     <>
-    <div className="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-      <div className="container py-5">
-          <h1 className="display-3 text-white animated slideInRight">404 Error</h1>
-          <nav aria-label="breadcrumb">
-              <ol className="breadcrumb animated slideInRight mb-0">
-                  <li className="breadcrumb-item"><a href="#">Home</a></li>
-                  <li className="breadcrumb-item"><a href="#">Pages</a></li>
-                  <li className="breadcrumb-item active" aria-current="page">404 Error</li>
-              </ol>
-          </nav>
-      </div>
-  </div>
-  
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />  
   <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div className="container text-center">
           <div className="row justify-content-center">        

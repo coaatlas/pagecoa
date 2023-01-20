@@ -41,7 +41,7 @@
     left: 25px;
     width: 60px;
     height: 60px;
-    background: url(../../assets/img/Delete.png) no-repeat;
+    background: url(../../assets/img/Delete1.png) no-repeat;
     background-size: 50%;
     background-color: rgba(243, 9, 9, 0.514)!important;
     background-position: center;
@@ -56,7 +56,7 @@
 }
 
 .fabb-danger:hover{ 
-    background: url(../../assets/img/Delete1.png) no-repeat;
+    background: url(../../assets/img/Delete.png) no-repeat;
     background-size: 50%;
     background-color: rgba(243, 9, 9, 0.514)!important;
     background-position: center;
