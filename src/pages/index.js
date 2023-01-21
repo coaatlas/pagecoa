@@ -14,4 +14,5 @@ export * from './MontesDeOca';
 export * from './HospialVarela';
 export * from './CoaVideos';
 export * from './Bariloche';
+export * from './Ituzaingo';
 

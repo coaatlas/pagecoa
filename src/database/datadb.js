@@ -1683,6 +1683,78 @@ const itemData = [
         title: 'Bariloche',
         author : 'Coa Revestimientos',
     },
+    {
+        id: 275,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/1.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 276,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/2.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 277,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/3.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 278,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/4.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 279,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/5.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 280,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/6.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 281,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/7.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 282,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/8.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 283,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/9.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 284,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/10.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 285,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/11.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 286,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/itusaingo/12.jpg?raw=true   ',
+        title: 'Ituzaingo',
+        author : 'Coa Revestimientos',
+    },
 
 
          

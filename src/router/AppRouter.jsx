@@ -15,6 +15,7 @@ import { Baradero,
          HospitalLagunaBlanca,
          HospitalVarela,
          IntaCastelar,
+         Ituzaingo,
          JesusMariaCdba,
          LabChacarita,
          Laboratorio9DeJulio,
@@ -85,6 +86,7 @@ export const AppRouter = () => {
         <Route path="/montesdeoca" element={<MontesDeOca />} />
         <Route path="/hospitalvarela" element={<HospitalVarela />} />
         <Route path="/bariloche" element={<Bariloche/>} />
+        <Route path="/ituzaingo" element={<Ituzaingo/>} />
         <Route path="/videoscoa" element={<CoaVideos />} />   
         <Route path="/contact" element={<Contact />} />        
         <Route path="*" element={<NotFound />} />
@@ -104,6 +106,7 @@ export const AppRouter = () => {
            <Route path="/montesdeoca" element={<MontesDeOca />} />
            <Route path="/hospitalvarela" element={<HospitalVarela />} />
            <Route path="/bariloche" element={<Bariloche/>} />
+           <Route path="/ituzaingo" element={<Ituzaingo/>} />
            <Route path="/videoscoa" element={<CoaVideos />} />   
            <Route path="/contact" element={<Contact />} /> 
            <Route path="/login" element={<LoginPages />} />

@@ -175,6 +175,8 @@ export const NavBar1 = () => {
   <NavLink    to="/montesdeoca"                className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">M. De Oca </button></NavLink >
   <NavLink    to="/hospitalvarela"             className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Hosp. Varela</button></NavLink >
   <NavLink    to="/bariloche"                  className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">S. Bariloche</button></NavLink >
+  <NavLink    to="/ituzaingo"                  className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">H. Ituzaingó</button></NavLink >
+ 
   </div>
 </div>
 
