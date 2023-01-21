@@ -1575,6 +1575,115 @@ const itemData = [
         title: 'Hospitalelcrucedevarela',
         author : 'Coa Revestimientos',
     },
+    {
+        id: 257,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/1.jpg?raw=true',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 258,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/2.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 259,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/3.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 260,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/4.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 261,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/5.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 262,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/6.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 263,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/7.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 264,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/8.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 265,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/9.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 266,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/10.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 267,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/11.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 268,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/12.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 269,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/13.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 270,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/14.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 271,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/15.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 272,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/16.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 273,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/17.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 274,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bariloche/18.jpg?raw=true   ',
+        title: 'Bariloche',
+        author : 'Coa Revestimientos',
+    },
+
 
          
 

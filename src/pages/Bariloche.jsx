@@ -16,7 +16,7 @@ export const Bariloche = () => {
     <br />
 
     <LayoutsGaleria
-    children={<GaleriaImgComponent tittle="bariloche" value={100}      />}
+    children={<GaleriaImgComponent tittle="Bariloche" value={100}      />}
 
     
     titulo={"Supermercado Bariloche"}
