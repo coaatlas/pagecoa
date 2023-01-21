@@ -27,14 +27,11 @@ export const RegisterNavBar = () => {
  style={{
   textDecoration: 'none',
   color: 'white',
-}} >   <i className="fas fa-user-plus"></i>
+}} >   <i className="fas fa-calendar-alt "></i>
   <span> Calendario </span> </Link>
     </button>
 
-    &nbsp;  
-
-
-   
+    &nbsp;     
 
     </div>
      </div>

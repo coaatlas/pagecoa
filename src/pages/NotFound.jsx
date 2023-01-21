@@ -58,10 +58,7 @@ export const NotFound = () => {
 
                      
                      </p>
-                        <Link
-                     className="btn btn-primary py-3 px-5" 
-                      to="/"
-                     >Go Back To Home</Link>
+                     <Link to="/home"><a className="btn btn-primary py-3 px-5" href="">Go Back To Home</a></Link>
                 </div>
             </div>
         </div>

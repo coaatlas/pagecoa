@@ -1,4 +1,5 @@
 import React from 'react'
+import { PresupuestoContenido } from './PresupuestoContenido'
 import { RegisterNavBar } from './RegisterNavBar'
 
 
@@ -8,7 +9,7 @@ export const PresupuestoComponent = () => {
    
     
      <RegisterNavBar />
-    <div>PresupuestoComponent</div>
+    <PresupuestoContenido />
     </>
   )
 }

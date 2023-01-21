@@ -41,7 +41,7 @@ export const CoaVideoContenido = () => {
                   <p className="mb-4">
                     pronto estaremos subiendo videos de nuestros trabajos realizados
                   </p>
-                      <Link to="/"><a className="btn btn-primary py-3 px-5" href="">Go Back To Home</a></Link>
+                      <Link to="/home"><a className="btn btn-primary py-3 px-5" href="">Go Back To Home</a></Link>
               </div>
           </div>
       </div>
