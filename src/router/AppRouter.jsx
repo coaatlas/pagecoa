@@ -8,6 +8,7 @@ import { PresupuestoPage } from "../calendar/pages/PresupuestoPage";
 import { useAuthStore } from "../hooks";
 import { Baradero,
          Bariloche,
+         BlogPage,
          CoaVideos,
          Contact,
          Home,
@@ -88,6 +89,7 @@ export const AppRouter = () => {
         <Route path="/bariloche" element={<Bariloche/>} />
         <Route path="/ituzaingo" element={<Ituzaingo/>} />
         <Route path="/videoscoa" element={<CoaVideos />} />   
+        <Route path="/blog" element={<BlogPage />} />   
         <Route path="/contact" element={<Contact />} />        
         <Route path="*" element={<NotFound />} />
         </>

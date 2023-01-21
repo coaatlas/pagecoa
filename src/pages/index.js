@@ -15,4 +15,7 @@ export * from './HospialVarela';
 export * from './CoaVideos';
 export * from './Bariloche';
 export * from './Ituzaingo';
+export * from './BlogPage';
+
+
 

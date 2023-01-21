@@ -155,11 +155,11 @@ export const NavBar1 = () => {
 
             <NavLink to="/home" 
                  className={ ({ isActive }) => `nav-link  dropdownn  ${isActive ? 'active':''}` } >  
-            <button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Home </button></NavLink>
+            <button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><i className='fa-regular fa-house'></i> Home </button></NavLink>
 
                 <NavLink to="/portfolio"
                  className={ ({ isActive }) => `nav-link dropdownn   ${isActive ? 'active ':''}` } >  
-            <button   className="btn"  data-bs-toggle="collapse" data-bs-target="#navbarCollapse" >Portfolio</button></NavLink>  
+            <button   className="btn"  data-bs-toggle="collapse" data-bs-target="#navbarCollapse" > Portfolio</button></NavLink>  
 
                 <div className="nav-item  dropdownn" >
                 <NavLink  className="nav-link" >   <button className="btn dropdown-toggle">Obras</button></NavLink >
@@ -186,18 +186,32 @@ export const NavBar1 = () => {
 
 
 <NavLink to="/contact"  className={ ({ isActive }) => `nav-link  dropdownn  ${isActive ? 'active ':''}` } >  
-            <button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Contact</button></NavLink>
+            <button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><i className="fas fa-sharp fa-solid fa-address-book"></i> Contact</button></NavLink>
            {
                 (status === 'not-authenticated' ) ? (
                     <>
                     </>
                    
                 ) : (
-                    <NavLink to="/calendar"  className={ ({ isActive }) => `nav-link  dropdownn  ${isActive ? 'active ':''}` } >
-                     <button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" >
-                    <i className='fas fa-calendar-alt '></i> Calendar
-                    </button>
-                    </NavLink>
+                    // <NavLink to="/calendar"  className={ ({ isActive }) => `nav-link  dropdownn  ${isActive ? 'active ':''}` } >
+                    //  <button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" >
+                    // <i className='fas fa-calendar-alt '></i> Calendar
+                    // </button>
+                    // </NavLink>
+
+                    <div className="nav-item  dropdownn" >
+                    <NavLink  className="nav-link" >   <button className="btn dropdown-toggle"><i className="fas fa-light fa-users"></i> Coa</button></NavLink >
+      <div className="dropdownn-content bg-light m-0">
+      <NavLink    to="/calendar"    className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"> <i className='fas fa-calendar-alt '></i> Agenda</button></NavLink >
+      <NavLink    to="/blog"        className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"><i className="fas fa-regular fa-blog"></i>    Blog</button></NavLink >
+ 
+      </div>
+    </div>
+    
+
+
+
+
                 )
            }
 
