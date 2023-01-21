@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuthStore } from '../../hooks';
 
-export const CalendarNavBar = () => {
+export const RegisterNavBar = () => {
 
   const { user  } = useAuthStore();
 
@@ -23,24 +23,18 @@ export const CalendarNavBar = () => {
       }}  >
  
  <button className='btn btn-outline-danger'>
- <Link  to="/register"
+ <Link  to="/calendar"
  style={{
   textDecoration: 'none',
   color: 'white',
 }} >   <i className="fas fa-user-plus"></i>
-  <span> Registro </span> </Link>
+  <span> Calendario </span> </Link>
     </button>
+
     &nbsp;  
-    <button className='btn btn-outline-danger '>   
- <Link  to="/presupuesto"
- style={{
-  textDecoration: 'none',
-  color: 'white',
 
-}} > <i className="fas fa-file-invoice"></i>
-  <span> presupuestos </span> </Link>
-    </button>
 
+   
 
     </div>
      </div>

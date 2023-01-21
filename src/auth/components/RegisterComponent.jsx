@@ -37,11 +37,7 @@ export const RegisterComponent = () => {
     
   return (
     <>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />  
+    
   <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div className="container text-center">
           <div className="row justify-content-center">        

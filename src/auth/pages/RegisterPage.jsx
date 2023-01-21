@@ -2,6 +2,7 @@ import { CircularProgress } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { RegisterNavBar } from '../../calendar/components/RegisterNavBar';
 import { customFetch } from '../../database/customfech';
 import { BannerComponent } from '../../ui';
 import { LoginComponets } from '../components/LoginComponets'
@@ -41,6 +42,12 @@ export const RegisterPage = () => {
   else{
   return (
     <>
+    <br />
+    <br />  
+    <br />
+    <br />
+    <br />
+    <RegisterNavBar />
     <RegisterComponent  />
     </>
   
