@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux"
 import Swal from "sweetalert2";
 import { calendarApi } from "../api";
-import { clearError, onChecking, onLogin, onLogout } from "../store";
+import { clearError, onChecking, onLogin, onLogout, onLogoutCalendar } from "../store";
 
 
 export const useAuthStore = () => {
@@ -110,6 +110,7 @@ export const useAuthStore = () => {
 
     const startLogout = () => {
       localStorage.clear();
+      dispach(onLogoutCalendar());
       dispach(onLogout());
 
       if (window.location.href.includes('#/calendar')) {

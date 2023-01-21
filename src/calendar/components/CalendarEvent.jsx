@@ -1,7 +1,13 @@
+import { useAuthStore } from "../../hooks";
 
 export const CalendarEvent = ({ event }) => {
 
+    
+
     const { title,notes,amount,user } = event;
+
+    const isMyEvent = (user.uid === event.user._id) || (user.uid === event.user.uid);
+
 
     return (
         <> 
@@ -11,10 +17,10 @@ export const CalendarEvent = ({ event }) => {
     <div className="card"
     style={{width: '60rem',
     height: '9rem',
-    backgroundColor: '#FF5E14',
+    backgroundColor:  '#367CF7' ,
     borderRadius: '7px',
     borderBlockColor: 'black',
-    marginTop: '-2px',
+    marginTop: '2px',
     marginBottom: '5px',
     marginLeft: '-15px',
     marginRight: '5px',
