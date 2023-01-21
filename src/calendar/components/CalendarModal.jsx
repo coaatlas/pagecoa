@@ -129,6 +129,16 @@ export const CalendarModal = () => {
                     showTimeSelect
                     locale="es"
                     timeCaption="Hora"
+                    Style={ { width: '60%',
+                    height: '100%',
+                 }   }
+
+                  
+                    
+
+                
+
+
                 />
             </div>
 
