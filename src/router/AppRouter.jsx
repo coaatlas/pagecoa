@@ -7,6 +7,7 @@ import { CalendarPage } from "../calendar/pages/CalendarPage";
 import { PresupuestoPage } from "../calendar/pages/PresupuestoPage";
 import { useAuthStore } from "../hooks";
 import { Baradero,
+         Bariloche,
          CoaVideos,
          Contact,
          Home,
@@ -83,6 +84,7 @@ export const AppRouter = () => {
         <Route path="/inta-castelar" element={<IntaCastelar/>} />
         <Route path="/montesdeoca" element={<MontesDeOca />} />
         <Route path="/hospitalvarela" element={<HospitalVarela />} />
+        <Route path="/bariloche" element={<Bariloche/>} />
         <Route path="/videoscoa" element={<CoaVideos />} />   
         <Route path="/contact" element={<Contact />} />        
         <Route path="*" element={<NotFound />} />
@@ -101,6 +103,7 @@ export const AppRouter = () => {
            <Route path="/inta-castelar" element={<IntaCastelar/>} />
            <Route path="/montesdeoca" element={<MontesDeOca />} />
            <Route path="/hospitalvarela" element={<HospitalVarela />} />
+           <Route path="/bariloche" element={<Bariloche/>} />
            <Route path="/videoscoa" element={<CoaVideos />} />   
            <Route path="/contact" element={<Contact />} /> 
            <Route path="/login" element={<LoginPages />} />
