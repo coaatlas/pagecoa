@@ -17,7 +17,7 @@
     outline: none;
     cursor: pointer;
     transition: 0.3s;
-    z-index: 1;       
+    z-index: 1999 ;      
 }
 
 .fabb:hover{ 
@@ -30,7 +30,7 @@
     rotate: 360deg;
     transform: rotate(360deg);
     transition: 0.3s;
-    z-index: 1;
+    z-index: 1999 ;  
 } 
 
 .fabb-danger {
@@ -50,7 +50,7 @@
     outline: none;
     cursor: pointer;
     transition: 0.3s;
-    z-index: 1;  
+    z-index: 1999 ;  
 
 
 }
@@ -65,7 +65,7 @@
     rotate: 360deg;
     transform: rotate(360deg);
     transition: 0.3s;
-    z-index: 1;
+    z-index: 1999 ;  
 }
 
 
