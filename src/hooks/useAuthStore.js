@@ -29,6 +29,7 @@ export const useAuthStore = () => {
         } catch (error) {
 
           dispach (onLogout( 'credenciales incorrectas' ) );
+          Swal.fire('Error', error.response.data.message , 'error');
 
           setTimeout(() => {
             dispach(clearError());
