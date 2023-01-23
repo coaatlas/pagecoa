@@ -105,7 +105,7 @@ export const useAuthStore = () => {
       dispach(onLogoutCalendar());
       dispach(onLogout());
 
-      if (window.location.href.includes('#/calendar')||window.location.href.includes('#/blog')||window.location.href.includes('#/register') ) {
+      if (window.location.href.includes('#/calendar') ) {
         window.location.href = "#/home";
       }
 
