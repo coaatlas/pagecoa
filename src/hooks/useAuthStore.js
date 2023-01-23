@@ -64,7 +64,7 @@ export const useAuthStore = () => {
             dispach(onLogout());
 
             if (window.location.href.includes('#/register')) {
-              window.location.href = "#/login";
+              window.location.href = "#/home";
             }
 
             setTimeout(() => {
