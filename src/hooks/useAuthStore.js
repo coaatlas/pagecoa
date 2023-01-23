@@ -40,7 +40,6 @@ export const useAuthStore = () => {
 
 //=========Register================
 
-
     const startRegister = async({email,password,name}) => {
         
         dispach(onChecking());
@@ -57,9 +56,7 @@ export const useAuthStore = () => {
 
       if (window.location.href.includes('#/register')) {
         window.location.href = "#/login";
-      }
-
-           
+      }           
           } catch (error) {
             console.log(error);
             Swal.fire('Error', error.response.data.message , 'error');            
@@ -73,12 +70,7 @@ export const useAuthStore = () => {
             setTimeout(() => {
               dispach(clearError());
             }
-            , 1500);
-
-
-              
-
-  
+            , 1500);  
            
           }
     }
@@ -113,15 +105,11 @@ export const useAuthStore = () => {
       dispach(onLogoutCalendar());
       dispach(onLogout());
 
-      if (window.location.href.includes('#/calendar')) {
-        window.location.href = "#/login";
+      if (window.location.href.includes('#/calendar')||window.location.href.includes('#/blog')||window.location.href.includes('#/register') ) {
+        window.location.href = "#/home";
       }
 
     }
-
-
-
-
 
   return {
     status,
