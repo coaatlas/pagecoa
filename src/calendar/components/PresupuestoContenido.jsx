@@ -161,10 +161,10 @@ export const PresupuestoContenido = () => {
 
             <hr />
             <br />
-           <p> suma : <input value={suma}/></p> 
+           <p> Presupuesto<sup>( x m<sup>2</sup> )</sup> $ :  <input value={suma}/></p> 
 
                
-            <p>Presupuesto<sup>( x m<sup>2</sup> )</sup> $ : 
+            <p>Notas :  
                 <textarea 
                     type="text" 
                     className="form-control-lgnotas border-0"
