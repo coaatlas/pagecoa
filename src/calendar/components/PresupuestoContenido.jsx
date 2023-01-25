@@ -160,6 +160,7 @@ export const PresupuestoContenido = () => {
 
 
             <hr />
+            <br />
            <p> suma : <input value={suma}/></p> 
 
                
@@ -171,7 +172,7 @@ export const PresupuestoContenido = () => {
                     rows="3"
                     name="notes"
                     cols="46" 
-                                    
+
                  
                 ></textarea></p>
 
