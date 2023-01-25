@@ -174,14 +174,7 @@ export const PresupuestoContenido = () => {
                 <span>Los precios no incluyen traslado</span>
                 <span>Los precios so validos por 30 dias a partir de la fecha de emision : {hoy}/{mesActual}/{year} </span>
 
-                <hr  />
-
-              
-
-               
-
-               
-          
+                <hr  />     
 
         </form>
       
