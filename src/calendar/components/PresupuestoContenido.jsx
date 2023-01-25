@@ -124,7 +124,7 @@ export const PresupuestoContenido = () => {
              placeholder="........" 
              className="form-control-lg border-0"
              required 
-             size="40"
+            
              /></p>
 
              <hr  />
