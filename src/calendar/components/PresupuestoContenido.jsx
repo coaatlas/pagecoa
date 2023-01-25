@@ -97,7 +97,7 @@ export const PresupuestoContenido = () => {
             x: 0,
             y: 0,
             html2canvas: { dpi: 192, letterRendering: true },
-            jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' }
+          
 
          } } >
         {({ toPdf }) => <button       className="btn btn-primary fabb" onClick={toPdf}>Generar PDF</button>}
