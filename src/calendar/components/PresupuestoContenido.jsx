@@ -164,7 +164,7 @@ export const PresupuestoContenido = () => {
            <p> suma : <input value={suma}/></p> 
 
                
-            <p>Notas :  
+            <p>Presupuesto<sup>( x m<sup>2</sup> )</sup> $ : 
                 <textarea 
                     type="text" 
                     className="form-control-lgnotas border-0"
