@@ -35,6 +35,15 @@
    
 }
 
+.form-control-lgg {
+    background: #ffffff;
+    border-bottom: 2px solid !important;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+
+   
+}
+
 @media screen and (max-width: 768px) {
     .form {
         width: 140%;
@@ -71,6 +80,16 @@
         color: rgb(0, 0, 0);
         margin-top: 10px;
         width: 30%;
+        height: 30px;
+        font-size: 0.7rem;
+    }
+
+    .form-control-lg {
+        background: #ffffff;
+        border-bottom: 1px solid !important;
+        color: rgb(0, 0, 0);
+        margin-top: 10px;
+        width: 60%;
         height: 30px;
         font-size: 0.7rem;
     }

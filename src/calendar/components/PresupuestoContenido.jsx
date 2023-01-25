@@ -129,7 +129,7 @@ export const PresupuestoContenido = () => {
              type="text"
              name="nombre"
              placeholder="........" 
-             className="form-control-lg border-0"
+             className="form-control-lgg border-0"
              required 
             
              /></p>
