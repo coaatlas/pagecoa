@@ -88,10 +88,11 @@ export const PresupuestoContenido = () => {
         options={{
             sx: 0.5,
             sy: 0.5,
-            scale: 0.5,
-          
             unit: 'in',
-            format: [4, 2],
+            format: [  10, 21 ],
+          
+          
+    
             compress: true,
             x: 0,
             y: 0,
