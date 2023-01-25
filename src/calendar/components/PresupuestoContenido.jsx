@@ -85,10 +85,20 @@ export const PresupuestoContenido = () => {
   return (
    <>
    <Pdf targetRef={ref} filename="Presupuesto.pdf" 
-        options={{        
+        options={{
+            sx: 0.5,
+            sy: 0.5,
+            scale: 0.5,
+          
             unit: 'in',
-            format: [  10, 21 ]
-        }} >
+            format: [4, 2],
+            compress: true,
+            x: 0,
+            y: 0,
+            html2canvas: { dpi: 192, letterRendering: true },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'landscape' }
+
+         } } >
         {({ toPdf }) => <button       className="btn btn-primary fabb" onClick={toPdf}>Generar PDF</button>}
         </Pdf>
 
