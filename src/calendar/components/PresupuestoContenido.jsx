@@ -96,7 +96,7 @@ export const PresupuestoContenido = () => {
             compress: true,
             x: 0,
             y: 0,
-            html2canvas: { dpi: 192, letterRendering: true },
+        
           
 
          } } >
