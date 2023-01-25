@@ -37,13 +37,13 @@
 
 @media screen and (max-width: 768px) {
     .form {
-        width: 110%;
+        width: 120%;
         height: 100%;
     }
 
     .form hr {
-        width: 50%;
-        height: 4px;
+        width: 60%;
+        height: 2px;
         background-color: #030303;
         border: none;
         margin: 0;
