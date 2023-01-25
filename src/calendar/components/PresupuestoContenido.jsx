@@ -166,7 +166,7 @@ export const PresupuestoContenido = () => {
             <p>Notas :  
                 <textarea 
                     type="text" 
-                    className="form-control-lg border-0"
+                    className="form-control-lgnotas border-0"
                     placeholder=""
                     rows="3"
                     name="notes"
