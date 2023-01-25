@@ -167,10 +167,11 @@ export const PresupuestoContenido = () => {
                 <textarea 
                     type="text" 
                     className="form-control-lgnotas border-0"
-                    placeholder=""
+                    placeholder="ingrese notas"
                     rows="3"
                     name="notes"
-                    cols="46"                 
+                    cols="46" 
+                                    
                  
                 ></textarea></p>
 
