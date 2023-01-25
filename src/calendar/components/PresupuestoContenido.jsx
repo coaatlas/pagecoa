@@ -159,7 +159,7 @@ export const PresupuestoContenido = () => {
            <p>Capa dos manos<sup>( x m<sup>2</sup> )</sup> $ :<input className="form-control-lg border-0"           onChange={handleInput} name="ten" value={number.ten} placeholder="Ingesa monto"/></p>
            <p>Capa dos manos<sup>( x m<sup>2</sup> )</sup> $ :<input className="form-control-lg border-0"           onChange={handleInput} name="eleven" value={number.eleven} placeholder="Ingesa monto"/></p>
            <p>Capa dos manos<sup>( x m<sup>2</sup> )</sup> $ :<input className="form-control-lg border-0"           onChange={handleInput} name="twelve" value={number.twelve} placeholder="Ingesa monto"/></p>
-           <p>Capa dos manos<sup>( x m<sup>2</sup> )</sup> $ :<input className="form-control-lg border-0"           onChange={handleInput} name="thitteen" value={number.thirteen} placeholder="Ingesa monto"/></p>
+           <p>Capa dos manos<sup>( x m<sup>2</sup> )</sup> $ :<input className="form-control-lg border-0"           onChange={handleInput} name="thirteen" value={number.thirteen} placeholder="Ingesa monto"/></p>
            <p>Capa dos manos<sup>( x m<sup>2</sup> )</sup> $ :<input className="form-control-lg border-0"           onChange={handleInput} name="fourteen" value={number.fourteen} placeholder="Ingesa monto"/></p>
 
 
