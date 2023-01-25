@@ -86,14 +86,10 @@ export const PresupuestoContenido = () => {
    <>
    <Pdf targetRef={ref} filename="Presupuesto.pdf" 
         options={{
-            sx: 0.5,
-            sy: 0.5,
+           
             unit: 'in',
-            format: [  10, 21 ],
-          
-          
+            format: [  10, 21 ],     
     
-            compress: true,
             x: 0,
             y: 0,
         
