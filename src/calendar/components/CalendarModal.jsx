@@ -131,15 +131,7 @@ export const CalendarModal = () => {
                     timeCaption="Hora"
                     Style={ { width: '60%',
                     height: '100%',
-                 }   }
-
-                  
-                    
-
-                
-
-
-                />
+                 } } />
             </div>
 
             <div className="form-group mb-2">
