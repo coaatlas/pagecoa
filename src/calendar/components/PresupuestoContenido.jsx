@@ -105,7 +105,7 @@ export const PresupuestoContenido = () => {
             unit: 'in',
             format: [  10, 21 ]     ,
             orientation: 'portrait',
-            margin: [0.2, 0.5, 0.5, 0.5],
+            margin: [0.2, 0.5, 0.5, 1.5],
                     
             
 
