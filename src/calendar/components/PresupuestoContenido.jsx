@@ -103,13 +103,8 @@ export const PresupuestoContenido = () => {
    <Pdf targetRef={ref} filename="Presupuesto.pdf" 
         options={{           
             unit: 'in',
-            format: [  10, 21 ]     ,
-            orientation: 'portrait',
-            margin: [0, 2.5, 0.5, 1.5],
-                    
-            
-
-         } } >
+            format: [  10, 21 ]  
+                }} >
         {({ toPdf }) => <button       className="btn btn-primary fabbpdf" onClick={toPdf}></button>}
         </Pdf>
 
