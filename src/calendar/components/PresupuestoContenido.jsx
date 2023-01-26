@@ -13,6 +13,7 @@ import { BanerNavbar } from '../../ui/components/banner/BanerNavbar';
 const ref = React.createRef();
 
 export const PresupuestoContenido = () => {
+    const url="https://www.coarevestimiento.com.ar/#/home";
 
     //fecha y hora actual
     const fecha = new Date();
@@ -122,7 +123,7 @@ export const PresupuestoContenido = () => {
       <div ref = {ref} >
           <div className="row justify-content-center">
    
-          <BanerNavbar    />
+      
         <form className="form"   >
 
             
@@ -193,13 +194,15 @@ export const PresupuestoContenido = () => {
                 <span>Los precios no incluyen IVA</span>
                 <span>Los precios no incluyen traslado</span>
                 <span>Los precios so validos por 30 dias a partir de la fecha de emision : {hoy}/{mesActual}/{year} </span>
+                <p className="mb-2"> <a className="fw-semi-bold"  href={url}> Coa Revestimientos</a>
+            </p>
 
                 <hr  />     
 
         </form>
       
           </div>
-          <BannerComponent    />
+          
       </div>
   </div>
   </div>
