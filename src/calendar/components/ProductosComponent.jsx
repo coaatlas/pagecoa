@@ -56,7 +56,7 @@ export const ProductosComponent = () => {
                            </tr>
                         <tr>                     
                         <th scope="col">Nombre</th>
-                        <th scope="col">Precio $</th>
+                        <th scope="col">Precio $ARG</th>
                         <th scope="col">Descripción</th>
                         <th scope="col">Categoria</th>                     
                         <td  colSpan="2" >                            
@@ -74,7 +74,7 @@ export const ProductosComponent = () => {
                             : productos.map(item => (
                                     <tr key={item.id} >                                                           
                                         <td>{item.nombre}</td>
-                                        <td>&#8369;{item.precio}</td>
+                                        <td>&#65284;{item.precio}</td>
                                         <td>{item.descripcion}</td>
                                         <td>{item.categoria}</td>                                      
                                         <td>
