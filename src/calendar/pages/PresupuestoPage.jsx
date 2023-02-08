@@ -44,7 +44,6 @@ export const PresupuestoPage = () => {
     <br />
     <br />
     <br />
-    <br />
     <PresupuestoComponent />
     
     </>

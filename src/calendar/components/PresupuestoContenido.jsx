@@ -20,12 +20,9 @@ export const PresupuestoContenido = () => {
     const hoy = fecha.getDate();
     const mesActual = fecha.getMonth() + 1; 
     const year = fecha.getFullYear();
-
     const { user  } = useAuthStore();
 
-
-   //suma de los productos
-   
+   //suma de los productos   
    const [number, setNumber] = useState({
         one: 0,
         two: 0, 
@@ -84,11 +81,11 @@ export const PresupuestoContenido = () => {
              Number(twelve) +
              Number(thirteen) +
              Number(fourteen) +
-                Number(fifteen) +
-                Number(sixteen) +
-                Number(seventeen) +
-                Number(eighteen)  +
-                Number(nineteen)
+             Number(fifteen) +
+             Number(sixteen) +
+             Number(seventeen) +
+             Number(eighteen)  +
+             Number(nineteen)
       )
    },[number])
  
@@ -108,9 +105,6 @@ export const PresupuestoContenido = () => {
         {({ toPdf }) => <button       className="btn btn-primary fabbpdf" onClick={toPdf}></button>}
         </Pdf>
 
-
-
-
      <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
     
       <div className="container text-center">
@@ -119,9 +113,7 @@ export const PresupuestoContenido = () => {
           <div className="row justify-content-center">
    
       
-        <form className="form"   >
-
-            
+        <form className="form"   >            
        
         <h3> Presupuesto  </h3>
             <div className="form-group mb-2">

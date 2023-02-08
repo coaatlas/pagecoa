@@ -14,7 +14,7 @@ export const useCalendarStore = () => {
     const {user} = useSelector( state => state.auth );
 
     const setActiveEvent = ( calendarEvent ) => {
-        dispatch( onSetActiveEvent( calendarEvent ) )
+        dispatch( onSetActiveEvent( calendarEvent ) ) 
     }
 
     const startSavingEvent = async( calendarEvent ) => {
@@ -48,7 +48,7 @@ export const useCalendarStore = () => {
         // Todo: Llegar al backend
 
         try {
-          await  calendarApi.delete( `/events/${activeEvent.id}` );
+          await  calendarApi.delete( `/events/${activeEvent.id}` ); 
             dispatch( onDeleteEvent() );
         }
         catch (error) {

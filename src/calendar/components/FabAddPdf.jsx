@@ -8,8 +8,6 @@ const ref = React.createRef();
 
 export const FabAddPdf = () => {
 
-
-
     const handleClickNew = () => {
         <Pdf targetRef={ref} filename="Presupuesto.pdf">
         {({ toPdf }) => <button  className="btn btn-primary fabbpdf" onClick={toPdf}></button>}

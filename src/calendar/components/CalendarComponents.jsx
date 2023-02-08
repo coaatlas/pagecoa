@@ -16,7 +16,7 @@ import { getMessagesEs } from '../helpers/getMessages';
 
 
 
-export const CalendarComponents = () => {
+export const CalendarComponents = () => { 
 
   const {user}= useAuthStore();
 
@@ -29,9 +29,6 @@ export const CalendarComponents = () => {
 
 
     const isMyEvent = (user.uid === event.user._id) || (user.uid === event.user.uid);
-
-
-
 
     const style = {
       backgroundColor: isMyEvent ? '#367CF7' : '#465660',

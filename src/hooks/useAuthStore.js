@@ -38,7 +38,6 @@ export const useAuthStore = () => {
         }
     }
 
-
 //=========Register================
 
     const startRegister = async({email,password,name}) => {

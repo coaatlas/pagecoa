@@ -16,6 +16,8 @@ export * from './CoaVideos';
 export * from './Bariloche';
 export * from './Ituzaingo';
 export * from './BlogPage';
+export * from './Clientes';
+export * from './Productos';
 
 
 

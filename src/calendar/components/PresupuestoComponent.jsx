@@ -1,15 +1,19 @@
 import React from 'react'
+import { NuevoPresupuesto } from './NuevoPresupuesto'
 import { PresupuestoContenido } from './PresupuestoContenido'
-import { RegisterNavBar } from './RegisterNavBar'
+import { PresupuestoNavBar } from './PresupuestoNavBar'
+
 
 
 export const PresupuestoComponent = () => {
+
+  
   return (
 <>
    
     
-     <RegisterNavBar />
-    <PresupuestoContenido />
+    <PresupuestoNavBar  />
+    <NuevoPresupuesto />
     </>
   )
 }

@@ -9,6 +9,7 @@ import { useAuthStore } from "../hooks";
 import { Baradero,
          Bariloche,
          BlogPage,
+         Clientes,
          CoaVideos,
          Contact,
          Home,
@@ -23,6 +24,7 @@ import { Baradero,
          MontesDeOca,
          NotFound,
          Portfolio,
+         Productos,
          RadiologiaFormosa } from "../pages"
 import {Copirrigth, Footer, NavBar1 } from "../ui"
 
@@ -73,6 +75,10 @@ export const AppRouter = () => {
         <Route path="/blog" element={<BlogComponet />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/presupuesto" element={<PresupuestoPage />} />
+        <Route path="/clientes" element={<Clientes />} />
+        <Route path="/productos" element={<Productos />} />
+
+
 
         <Route path="/home" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
