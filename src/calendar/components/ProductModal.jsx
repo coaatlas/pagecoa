@@ -87,7 +87,7 @@ useEffect (() => {
         setFormSubmit(true);
 
         if (formValues.nombre.trim().length <= 0 || 
-            formValues.precio.trim().length <= 0 ||
+            formValues.precio.trim().length <= 0 ||           
             formValues.descripcion.trim().length <= 0 ||
             formValues.categoria.trim().length <= 0 ) {
             Swal .fire('Error', 'Todos los campos son obligatorios', 'error');
