@@ -74,7 +74,7 @@ export const ProductosComponent = () => {
                             : productos.map(item => (
                                     <tr key={item.id} >                                                           
                                         <td>{item.nombre}</td>
-                                        <td>{item.precio}</td>
+                                        <td><td style={{border: 'none',color:'green'}}>&#65284;</td><td style={{border: 'none',color:'red'}}>{item.precio}</td></td>
                                         <td>{item.descripcion}</td>
                                         <td>{item.categoria}</td>                                      
                                         <td>
