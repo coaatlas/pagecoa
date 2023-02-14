@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Modal from 'react-modal'
 import Pdf from "react-to-pdf";
 import { useClientStore, usePresupuestosStore, useProductoStore, useUiStorePdf} from '../../hooks';
+import { ClienteEmpresaResumen } from './ClienteEmpresaResumen';
 import { FooterPresupuestos } from './FooterPresupuestos';
 import './modal.css'
 
@@ -132,14 +133,12 @@ formValues.pedido.map (pedido => pedido.precio[1]) ;
 
     <form className="container" onSubmit={ onSumbitForm } ref = {ref}>
     <h6> <span> { fechaActual }</span><br/>Presupuesto para  - 
-        {
-            formValues.empresa.map( empresa => (
-                <span key={ empresa.empresa }> { empresa.empresa } - </span>
-            ))
-
-        }
    
+    
     </h6>
+      
+   
+    
     <hr />
         <div className="form-group"   >
             <label 
