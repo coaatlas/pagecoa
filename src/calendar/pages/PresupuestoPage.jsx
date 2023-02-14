@@ -7,36 +7,8 @@ import { PresupuestoComponent } from '../components/PresupuestoComponent';
 
 
 export const PresupuestoPage = () => {
-    const [items, setItems] = useState([]); 
-    useEffect(() => {
-             customFetch(1500,'calendar').then((data) => setItems(data));            
-     }, [items]);
-  
-    if (items.length === 0) {
-        return (
-         <>
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-         <br />
-  <BannerComponent  descrip="Ofrecemos soluciones integrales instalando pisos y revestimientos vinilicos en todo el País."  />
-  
-  <Box sx={{ display: 'flex' ,
-   justifyContent: 'center',
-   alignItems: 'center',
-  }}>
-       <CircularProgress
-         color="secondary"
-         size={40}
-         thickness={3}
-        />
-     </Box>           
-          </>
-        );       
-    }   
-    else{
+ 
+   
   return (
     <>
     <br />
@@ -49,4 +21,4 @@ export const PresupuestoPage = () => {
     </>
   )
 }
-}
+

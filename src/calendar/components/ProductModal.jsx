@@ -25,7 +25,6 @@ export const ProductModal = () => {
 
     const { isDateModalOpen ,closeDateModal }=useUiStore ();
     const{ activeProducto, startSavingProducto }= useProductoStore();
-
    
 
     const [formValues, setFormValues] = useState({
@@ -190,7 +189,7 @@ const onCloseModal = () => {
             type="button"
             className="btn-close "
             onClick={ onCloseModal } >
-            <i className="far fa-window-close"></i>
+            <i className="far fa-window-close"></i> 
         </button>
         </form>
    </Modal>

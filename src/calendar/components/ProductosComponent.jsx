@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import Swal from 'sweetalert2'
 import { useClientStore, useProductoStore, useUiStore } from '../../hooks'
 import { FabAddProduc } from './FabAddProduc'
@@ -7,16 +8,15 @@ import { ProductModal } from './ProductModal'
 
 export const ProductosComponent = () => {
     const { openDateModal } = useUiStore();   
-   const {  productos ,startLoadingProductos,startDeletingProducto,setActiveProducto,startSavingProducto}=useProductoStore()
+   const {  productos ,startLoadingProductos,startDeletingProducto,setActiveProducto}=useProductoStore()
 
     const handleEdit = (item) => {     
         setActiveProducto(item)
-        openDateModal();
-       
+        openDateModal();       
     }
 
     const handleDelete = (item) => {
-        setActiveProducto(item)
+        setActiveProducto(item) 
         Swal.fire({
             title: '¿Estas seguro?',
             text: "No podras revertir esta accion!",
@@ -37,7 +37,7 @@ export const ProductosComponent = () => {
         })    
     }
 
-    React.useEffect(() => {
+   useEffect(() => {
         startLoadingProductos()
     }, [])
 

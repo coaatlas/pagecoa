@@ -48,7 +48,6 @@ const handleDelete = async (clientes) => {
 
 useEffect(() => {
     startLoadingClientes();
-
 }, [])
 
 

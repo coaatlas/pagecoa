@@ -24,7 +24,6 @@ export const useProductoStore = () => {
         dispatch(onUpdateProducto({ ...producto, user }));
         return;
       }
-
       // Creando
 
       const { data } = await calendarApi.post("/productos", producto);
@@ -35,7 +34,7 @@ export const useProductoStore = () => {
     }
   };
 
-  const startLoadingProductos = async () => {
+  const startLoadingProductos = async ( ) => { 
     try {
       const { data } = await calendarApi.get("/productos");
       dispatch(onLoadedProductos(data.productos));
@@ -44,6 +43,8 @@ export const useProductoStore = () => {
       Swal.fire("Error al cargar", error.response.data?.msg, "error");
     }
   };
+
+  
 
   const startDeletingProducto = async (id) => {
     try {
