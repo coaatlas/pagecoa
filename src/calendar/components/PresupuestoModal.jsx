@@ -221,7 +221,7 @@ let n = 1;
                     <p key={ n++ }
                     style={{ color: 'red' ,
                     fontSize: '0.8rem'}} >
-                        { pedido.nombre } :$  -  
+                        { pedido.nombre } :$    
                         { pedido.precio }</p>
                 ))
             }    
