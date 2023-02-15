@@ -247,7 +247,7 @@ let n = 1;
 
             />   
         </div>
-      
+        <hr />
      
         <button
             type="submit"
