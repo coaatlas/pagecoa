@@ -180,10 +180,12 @@ let n = 1;
     <h4>Agregar Presupuesto</h4>
     <hr />
 
-    <form className="container" onSubmit={ onSumbitForm }>
-
+    <form className="container" onSubmit={ onSumbitForm } >
+   
         <div className="form-group">
             <label >Producto</label>
+
+          
             <Select
             options={ productos }         
             isMulti
@@ -193,10 +195,13 @@ let n = 1;
             components={animatedComponents}              
             />  
               </div>
+           
         <br />
-
-        <div className="form-group">
+         
+        <div className="form-group"  id='scroll-2'>
             <label>Precio</label>
+           
+             
             { 
                 formValues.pedido.map( pedido => (
                     <p key={ n++ }
@@ -213,6 +218,7 @@ let n = 1;
 
             Total: { formValues.total}</p>        
         </div>
+        
         <br />
         <div className="form-group">
             <label>Cantidad <sup>(x m<sup>2</sup>)</sup> a Presupuestar</label>
@@ -256,8 +262,9 @@ let n = 1;
             onClick={ onCloseModal } >
             <i className="far fa-window-close"></i>
         </button>
-
+       
         </form>
+        
    </Modal>
   )
 }

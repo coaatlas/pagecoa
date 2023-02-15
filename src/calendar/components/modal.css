@@ -74,6 +74,13 @@
     overflow-x:hidden;
 }
 
+#scroll-2{
+   
+    height:150px;
+    width:100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
 
 @media (max-width: 768px) {
     .modal {
