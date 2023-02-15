@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Modal from 'react-modal'
 import Pdf from "react-to-pdf";
-import { useClientStore, usePresupuestosStore, useProductoStore, useUiStorePdf} from '../../hooks';
+import {  usePresupuestosStore, useUiStorePdf} from '../../hooks';
 import { ClienteEmpresaResumen } from './ClienteEmpresaResumen';
 import { FooterPresupuestos } from './FooterPresupuestos';
 import './modal.css'
@@ -37,8 +37,6 @@ export const PresupuestotModalPdf = () => {
   const mesActual = fecha.getMonth() + 1; 
   const year = fecha.getFullYear();
 const fechaActual = `${hoy}/${mesActual}/${year}`
-
-
   
 
     const [formValues, setFormValues] = useState({   
@@ -78,17 +76,6 @@ useEffect (() => {
 
 //==============================================================
 
-    const onSumbitForm = async (e) => {
-        e.preventDefault();
-        setFormSubmit(true);
-      
-
-
-await startSavingPresupuesto(formValues);
-        setFormSubmit(false);
-       
-
-        }
 //==============================================================
 
 const onCloseModalPdf = () => {
@@ -100,20 +87,18 @@ const onCloseModalPdf = () => {
 //==============================================================
 
 let n = 0;
-
-
-
 let num =  formValues.pedido.map (pedido => pedido.precio)
-
-console.log(num)
 
 let totalsuma = num.reduce((a, b) => a + b, 0);
 
 
-const sumar = (a, b) => a + b;
-
 const total = formValues.pedido.map (pedido => pedido.precio[0]) + 
 formValues.pedido.map (pedido => pedido.precio[1]) ;
+
+useEffect(() => {
+    startLoadingPresupuestos();
+}, [startLoadingPresupuestos])
+
 
 
 
@@ -131,8 +116,9 @@ formValues.pedido.map (pedido => pedido.precio[1]) ;
    ><div  id="scroll">
    
 
-    <form className="container" onSubmit={ onSumbitForm } ref = {ref}>
+    <form className="container"  ref = {ref}>
     <h6> <span> { fechaActual }</span><br/>Presupuesto para  - 
+
    
     
     </h6>
@@ -179,16 +165,10 @@ formValues.pedido.map (pedido => pedido.precio[1]) ;
         <hr />
         <div className="form-group">
             <label>Total</label>
-            <p> $  {totalsuma }   <sup> (sin IVA)</sup> </p>
-            <p> $ { totalsuma   * 1.21 }   <sup> (IVA 21%)</sup> </p>
-        
-           
-    
-
-
-
-        </div>
-           
+            <p> $  {totalsuma}   <sup>( x mt<sup>2</sup>) (sin IVA) </sup>  </p>
+            <p> $ { totalsuma  *  formValues.cantidad }   <sup> (sin IVA)</sup> presupuestados<sup>( {formValues.cantidad} mts<sup>2</sup>)</sup>  </p>
+            <p> $ { totalsuma   * formValues.cantidad * 1.21 }   <sup> (IVA 21%)</sup> presupuestados<sup>( {formValues.cantidad} mts<sup>2</sup>)</sup>  </p>
+       </div>           
         <hr />
         <FooterPresupuestos />
         </div>

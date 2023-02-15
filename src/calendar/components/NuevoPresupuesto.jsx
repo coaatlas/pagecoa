@@ -85,7 +85,7 @@ useEffect(() => {
                                         <td>{item.pedido.map((item) => (<PrecioResumen  key={item.precio} precio={item.precio} />)  )} </td>
                                         <td><span style={{border: 'none',color:'green', fontSize: '0.9rem'}}>&#65284;</span><span style={{border: 'none',color:'red', fontSize: '0.9rem'}}>{item.total }</span></td>
                                         <td><span style={{border: 'none',color:'red', fontSize: '0.9rem'}}>{item.cantidad }<span style={{border: 'none',color:'green', fontSize: '0.9rem'}}><sup>( m<sup>2</sup>)</sup></span></span></td>
-                                       <td>{item.empresa.map((item) => ( <ClienteResumen  key={item.nombre} nombre={item.nombre} />)  ) }  </td>  
+                                       <td>{item.empresa.map((item) => ( <ClienteResumen  key={item.email} nombre={item.nombre} />)  ) }  </td>  
                                         <td>{item.empresa.map((item) => ( <ClienteEmpresaResumen  key={item.empresa} empresa={item.empresa} />)  ) }
                                             
                                             </td>   

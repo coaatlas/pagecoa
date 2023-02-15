@@ -24,8 +24,6 @@ const customStyles = {
 
 Modal.setAppElement('#root');
 
-
-
 export const PresupuestotModal = () => {
 
     const { isDateModalOpen ,closeDateModal }=useUiStore ();
@@ -69,12 +67,9 @@ export const PresupuestotModal = () => {
 
     }
 
-
     const [formSubmit, setFormSubmit] = useState(false)
 
-//==============================================================
-   
-
+//==============================================================   
 
 useEffect (() => {
     if (activePresupuesto !== null) {
@@ -82,19 +77,13 @@ useEffect (() => {
     }
 }, [activePresupuesto])
 
-
-
-
 //==============================================================
 
     const onSumbitForm = async (e) => {
         e.preventDefault();
-        setFormSubmit(true);
-      
-console.log(formValues);
+        setFormSubmit(true);      
 
-await startSavingPresupuesto(formValues);
-
+        await startSavingPresupuesto(formValues);
         Swal.fire('Guardado', 'Presupuesto guardado', 'success');
         setFormSubmit(false);
         closeDateModal(); 
@@ -109,13 +98,16 @@ const onCloseModal = () => {
 
 //==============================================================
 
-let n = 1;
+let n = 1;     
 
-      const total = formValues.pedido.map( pedido => pedido.precio).reduce((a, b) => a + b);
+      if (formValues.pedido.length > 0) {
+        n = formValues.pedido.map( pedido => pedido.precio).reduce((a, b) => a + b);
+        }
+        else {
+            n = 0;
+        }
 
-      //console.log(total + 'total');
-
-
+        const total = n ;      
 
            useEffect(() => {
             setFormValues({
@@ -125,32 +117,29 @@ let n = 1;
               }, [total])
 //==============================================================
 
-const [cantidad, setCantidad] = useState(0);
-
-useEffect(() => {
-    //console.log(cantidad);
-}, [cantidad])  
-
-const onInputChangedCantidad = ({ target }) => {
-    setCantidad(target.value)
-    setFormValues({
-        ...formValues,
-        cantidad: target.value
-    })
-}
-
-
-    //==============================================================        
-            
-      const [pedido, setPedido] = useState([]);   
-          
+     const [cantidad, setCantidad] = useState(0);
 
       useEffect(() => {
-      //console.log(pedido);
+       //console.log(cantidad);
+         }, [cantidad])  
+
+        const onInputChangedCantidad = ({ target }) => {
+         setCantidad(target.value)
+                    setFormValues({
+             ...formValues,
+           cantidad: target.value
+         })
+       }
+ 
+    //==============================================================        
+            
+      const [pedido, setPedido] =useState('');          
+
+      useEffect(() => {
+        //console.log(pedido);
       }, [pedido])
 
       const seleccionarp= prod => {
-
        setFormValues({
               ...formValues,              
                 pedido: prod 
@@ -161,17 +150,15 @@ const onInputChangedCantidad = ({ target }) => {
         const [empresa ,setEmpresa] = useState('');      
 
           useEffect(() => {
-            console.log(empresa);         
+           //console.log(empresa);         
            }, [empresa])
 
-            const seleccienarc= e => {
-                console.log(e);
+            const seleccienarc= e => {        
 
             setFormValues({
                 ...formValues,
                 empresa: e
-            })
-             
+            })             
                 }
 
 //==============================================================
@@ -192,19 +179,16 @@ const onInputChangedCantidad = ({ target }) => {
     <hr />
 
     <form className="container" onSubmit={ onSumbitForm }>
+
         <div className="form-group">
             <label >Producto</label>
             <Select
-            options={ productos }
-         
+            options={ productos }         
             isMulti
             getOptionLabel={(option) =>option .nombre  }           
             getOptionValue={(option) => option.id}
-            onChange={ (e) => seleccionarp(e) }
-            noOptionsMessage={() => "No hay resultados"}
-            closeMenuOnSelect={false}
-            components={animatedComponents}            
-           
+            onChange={ (e) => seleccionarp(e) }      
+            components={animatedComponents}              
             />  
               </div>
         <br />
@@ -228,9 +212,6 @@ const onInputChangedCantidad = ({ target }) => {
             Total: { formValues.total}</p>        
         </div>
         <br />
-      
-
-
         <div className="form-group">
             <label>Cantidad <sup>(x m<sup>2</sup>)</sup> a Presupuestar</label>
             <input
@@ -246,24 +227,7 @@ const onInputChangedCantidad = ({ target }) => {
         </div>
       
         <div className="form-group">
-            <label>Cliente</label>
-            {/* <select
-               
-                className="form-control"
-                name="cliente"
-                value={ formValues.cliente }
-                onChange={ onInputChanged }
-                getOptionLabel={(option) => option.nombre}
-                getOptionValue={(option) => option.id}
-            >
-                <option value="">Seleccione un cliente</option>
-                {
-                    clientes.map( cliente => (
-                        <option key={ cliente.id } value={ cliente.id }>{ cliente.nombre }</option>
-                    ))
-                }
-             
-            </select> */}
+            <label>Cliente</label>            
 
                <Select
             options={ clientes }
@@ -271,6 +235,7 @@ const onInputChangedCantidad = ({ target }) => {
             getOptionLabel={(option) => option.nombre}
             getOptionValue={(option) => option.id}
             onChange={ (e) => seleccienarc(e) }
+            components={animatedComponents}   
             />
          
         </div>      
