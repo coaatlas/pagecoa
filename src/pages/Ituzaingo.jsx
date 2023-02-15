@@ -6,7 +6,7 @@ import { BannerPortfolio } from '../ui'
 
 
 
-export const Ituzaingo = () => {
+export const Ituzaingo = () => { 
   return (
     <>
     <BannerPortfolio

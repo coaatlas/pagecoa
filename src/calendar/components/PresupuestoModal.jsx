@@ -191,6 +191,9 @@ let n = 1;
             getOptionValue={(option) => option.id}
             onChange={ (e) => seleccienarc(e) }
             components={animatedComponents}   
+         
+          
+            menuShouldScrollIntoView={true}
             />
          
         </div>      
