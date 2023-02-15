@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Modal from 'react-modal'
 import Pdf from "react-to-pdf";
 import {  usePresupuestosStore, useUiStorePdf} from '../../hooks';
+import { onSetActivePresupuesto } from '../../store';
 import { ClienteEmpresaResumen } from './ClienteEmpresaResumen';
 import { FooterPresupuestos } from './FooterPresupuestos';
 import './modal.css'
@@ -27,7 +28,7 @@ Modal.setAppElement('#root');
 export const PresupuestotModalPdf = () => {
 
     
-    const{presupuestos ,  activePresupuesto,startLoadingPresupuestos,  startSavingPresupuesto,  }=usePresupuestosStore();
+    const{presupuestos ,  activePresupuesto,startLoadingPresupuestos,  setActivePresupuesto  }=usePresupuestosStore();
 
     const{ isDateModalOpenPdf, closeDateModalPdf }=useUiStorePdf();
 
@@ -99,8 +100,11 @@ useEffect(() => {
     startLoadingPresupuestos();
 }, [startLoadingPresupuestos])
 
+let h = 0;
 
 
+console.log(formValues.empresa.map(empresa => empresa.nombre)
+    );
 
 //==============================================================
   return (
@@ -117,11 +121,14 @@ useEffect(() => {
    
 
     <form className="container"  ref = {ref}>
-    <h6> <span> { fechaActual }</span><br/>Presupuesto para  - 
+    <h6> <span> { fechaActual }</span><br/>Presupuesto  { formValues.empresa.map(empresa => empresa.empresa) }</h6>
+
+    
+     
 
    
     
-    </h6>
+    
       
    
     

@@ -23,7 +23,17 @@ export const FabAddPresupuesto = () => {
       ],
       total: '',
       cliente: '' ,
-          })
+      cantidad: '',
+      empresa: [
+          {
+              nombre: '',
+              empresa: '',
+          }
+      ],
+      
+         
+    
+    })
           
           openDateModal();
     }
