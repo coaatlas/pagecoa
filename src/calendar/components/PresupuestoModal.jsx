@@ -181,6 +181,20 @@ let n = 1;
     <hr />
 
     <form className="container" onSubmit={ onSumbitForm } >
+    <div className="form-group">
+            <label>Cliente</label>            
+
+               <Select
+            options={ clientes }
+            isMulti
+            getOptionLabel={(option) => option.nombre}
+            getOptionValue={(option) => option.id}
+            onChange={ (e) => seleccienarc(e) }
+            components={animatedComponents}   
+            />
+         
+        </div>      
+        <hr />
    
         <div className="form-group">
             <label >Producto</label>
@@ -234,20 +248,7 @@ let n = 1;
             />   
         </div>
       
-        <div className="form-group">
-            <label>Cliente</label>            
-
-               <Select
-            options={ clientes }
-            isMulti
-            getOptionLabel={(option) => option.nombre}
-            getOptionValue={(option) => option.id}
-            onChange={ (e) => seleccienarc(e) }
-            components={animatedComponents}   
-            />
-         
-        </div>      
-        <hr />
+     
         <button
             type="submit"
             className="btn btn-outline-primary btn-block"
