@@ -205,9 +205,9 @@ console.log(formValues.empresa.map(empresa => empresa.nombre)
                 color: 'black' ,
                 fontWeight: 'bold' ,
                 fontSize: '20px' }}>Total</label>
-            <p> $  {totalsuma}   <sup>( x mt<sup>2</sup>) (sin IVA) </sup>  </p>
-            <p> $ { totalsuma  *  formValues.cantidad }   <sup> (sin IVA)</sup> presupuestados<sup>( {formValues.cantidad} mts<sup>2</sup>)</sup>  </p>
-            <p> $ { totalsuma   * formValues.cantidad * 1.21 }   <sup> (IVA 21%)</sup> presupuestados<sup>( {formValues.cantidad} mts<sup>2</sup>)</sup>  </p>
+            <p className="contenido"> $  {totalsuma}   <sup>( x mt<sup>2</sup>) (sin IVA) </sup>  </p>
+            <p className="contenido"> $ { totalsuma  *  formValues.cantidad }   <sup> (sin IVA)</sup> presupuestados<sup>( {formValues.cantidad} mts<sup>2</sup>)</sup>  </p>
+            <p className="contenido"> $ { totalsuma   * formValues.cantidad * 1.21 }   <sup> (IVA 21%)</sup> presupuestados<sup>( {formValues.cantidad} mts<sup>2</sup>)</sup>  </p>
        </div>           
         <hr />
         <FooterPresupuestos />
