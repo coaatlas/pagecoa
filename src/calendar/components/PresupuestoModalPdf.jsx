@@ -6,7 +6,8 @@ import {  usePresupuestosStore, useUiStorePdf} from '../../hooks';
 import { onSetActivePresupuesto } from '../../store';
 import { ClienteEmpresaResumen } from './ClienteEmpresaResumen';
 import { FooterPresupuestos } from './FooterPresupuestos';
-import './modal.css'
+import './modal-pdf.css'
+
 
 const ref = React.createRef();
 
@@ -23,13 +24,9 @@ const customStyles = {
 
 Modal.setAppElement('#root');
 
-
-
 export const PresupuestotModalPdf = () => {
-
     
     const{presupuestos ,  activePresupuesto,startLoadingPresupuestos,  setActivePresupuesto  }=usePresupuestosStore();
-
     const{ isDateModalOpenPdf, closeDateModalPdf }=useUiStorePdf();
 
     //fecha y hora actual
@@ -57,25 +54,15 @@ const fechaActual = `${hoy}/${mesActual}/${year}`
         ]
     });
 
- 
-
-
     const [formSubmit, setFormSubmit] = useState(false)
 
 //==============================================================
-   
-
 
 useEffect (() => {
     if (activePresupuesto !== null) {
         setFormValues({...activePresupuesto})
     }
 }, [activePresupuesto])
-
-
-
-
-//==============================================================
 
 //==============================================================
 
@@ -121,16 +108,13 @@ console.log(formValues.empresa.map(empresa => empresa.nombre)
    
 
     <form className="container"  ref = {ref}>
-    <h6> <span> { fechaActual }</span><br/>Presupuesto  { formValues.empresa.map(empresa => empresa.empresa) }</h6>
+        <dib
+        className="img-logo"
+        >
 
-    
-     
-
-   
-    
-    
-      
-   
+        </dib>
+    <h6> Fecha Presupuesto  <span> : { fechaActual }</span> <br /> 
+   Empresa: { formValues.empresa.map(empresa => empresa.empresa) }</h6>
     
     <hr />
         <div className="form-group"   >
