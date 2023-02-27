@@ -108,15 +108,54 @@ console.log(formValues.empresa.map(empresa => empresa.nombre)
    
 
     <form className="container"  ref = {ref}>
-        <dib
-        className="img-logo"
-        >
+        <br />
+        <dib  
+        style={{
+            display: 'flex',
+            justifyContent: 'left',
+            alignItems: 'left',
+            marginTop: '10px',
+            marginBottom: '10px',
+            width: '300px',
+            height: '70px',
+            backgroundColor: 'white',
+            borderRadius: '10px',
+            border: '1px solid black',
+            boxShadow: '0 0 10px rgba(0,0,0,0.5)',
+            padding: '10px',
+            overflow: 'auto',
+            maxHeight: '100%',
+            maxWidth: '100%',
+            position: 'relative',
+            zIndex: '1000',
+            }} 
+           > 
+            <h6>Coa - Revestimientos     <br />
+          Tel:  11-3313-8900 / 11-3324-9832 
+            <br />  
+            <a href="mailto:cubas_beto@hotmail.com">cubas_beto@hotmail.com</a>
 
-        </dib>
+          </h6>
+
+           </dib>
+
+        <div
+    
+           
+        >
     <h6> Fecha Presupuesto  <span> : { fechaActual }</span> <br /> 
    Empresa: { formValues.empresa.map(empresa => empresa.empresa) }</h6>
-    
-    <hr />
+
+   </div>
+    <hr 
+    style={{
+        color: 'black',
+        backgroundColor: 'black',
+        height: 3,
+        borderColor : 'black',
+        zIndex: '1000',
+    }}
+    />
         <div className="form-group"   >
             <label 
             style={{ 
@@ -128,10 +167,15 @@ console.log(formValues.empresa.map(empresa => empresa.nombre)
         </div>
         <br />
         <div  id="scroll-1">
-        <div className="form-group">            
+        <div className="form-group"
+  
+        >            
             { 
                 formValues.pedido.map( pedido => (
-                    <p key={ n++ }> N° { n + 1 } : { pedido.nombre } - $  { pedido.precio } <sup>(el m<sup>2</sup>)</sup></p>
+                    <p className="contenido"
+                
+
+                     key={ n++ }> N° { n + 1 } : { pedido.nombre } - $  { pedido.precio } <sup>(el m<sup>2</sup>)</sup></p>
                 ))
             }    
              <p style={{
@@ -155,7 +199,12 @@ console.log(formValues.empresa.map(empresa => empresa.nombre)
             fontSize: '10px' }}>* Cantidad de mts<sup>2</sup> presupuestados  </p>
         <hr />
         <div className="form-group">
-            <label>Total</label>
+            <label
+            style={{
+                textAlign: 'left' ,
+                color: 'black' ,
+                fontWeight: 'bold' ,
+                fontSize: '20px' }}>Total</label>
             <p> $  {totalsuma}   <sup>( x mt<sup>2</sup>) (sin IVA) </sup>  </p>
             <p> $ { totalsuma  *  formValues.cantidad }   <sup> (sin IVA)</sup> presupuestados<sup>( {formValues.cantidad} mts<sup>2</sup>)</sup>  </p>
             <p> $ { totalsuma   * formValues.cantidad * 1.21 }   <sup> (IVA 21%)</sup> presupuestados<sup>( {formValues.cantidad} mts<sup>2</sup>)</sup>  </p>
@@ -163,13 +212,7 @@ console.log(formValues.empresa.map(empresa => empresa.nombre)
         <hr />
         <FooterPresupuestos />
         </div>
-       
-     
-      
- 
-
- 
-        </form>
+          </form>
         <button
             type="button"
             className="btn-close "
@@ -183,8 +226,10 @@ console.log(formValues.empresa.map(empresa => empresa.nombre)
             format: [14,8] ,
             unit: 'in',          
             orientation: 'portrait',    
-            html2canvas: { scale: 1 },
+            html2canvas: { scale: 2 },
+
             jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+            pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
           
               }}      
         >
