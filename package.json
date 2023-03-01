@@ -21,6 +21,7 @@
     "owl.carousel": "^2.3.4",
     "react": "^18.2.0",
     "react-big-calendar": "^1.5.2",
+    "react-component-export-image": "^1.0.6",
     "react-datepicker": "^4.8.0",
     "react-dom": "^18.2.0",
     "react-modal": "^3.16.1",

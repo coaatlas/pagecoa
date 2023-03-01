@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Modal from 'react-modal'
 import Pdf from "react-to-pdf";
 import {  usePresupuestosStore, useUiStorePdf} from '../../hooks';
@@ -7,9 +7,11 @@ import { onSetActivePresupuesto } from '../../store';
 import { ClienteEmpresaResumen } from './ClienteEmpresaResumen';
 import { FooterPresupuestos } from './FooterPresupuestos';
 import './modal-pdf.css'
+import { exportComponentAsPNG } from 'react-component-export-image';
 
 
 const ref = React.createRef();
+
 
 const customStyles = {
     content: {
@@ -25,7 +27,7 @@ const customStyles = {
 Modal.setAppElement('#root');
 
 export const PresupuestotModalPdf = () => {
-    
+   
     const{presupuestos ,  activePresupuesto,startLoadingPresupuestos,  setActivePresupuesto  }=usePresupuestosStore();
     const{ isDateModalOpenPdf, closeDateModalPdf }=useUiStorePdf();
 
@@ -94,6 +96,11 @@ console.log(formValues.empresa.map(empresa => empresa.nombre)
     );
 
 //==============================================================
+
+
+   
+
+const componentRef = useRef();
   return (
     <>   
     
@@ -104,48 +111,20 @@ console.log(formValues.empresa.map(empresa => empresa.nombre)
    className="modal"
    overlayClassName="modal-fondo"
    closeTimeoutMS={ 200 }
-   ><div  id="scroll">
-   
-
-    <form className="container"  ref = {ref}>
+   >
+        
+    <div   >
+        <form className="container" ref={componentRef}  >
         <br />
-        <dib  
-        style={{
-            display: 'flex',
-            justifyContent: 'left',
-            alignItems: 'left',
-            marginTop: '10px',
-            marginBottom: '10px',
-            width: '300px',
-            height: '70px',
-            backgroundColor: 'white',
-            borderRadius: '10px',
-            border: '1px solid black',
-            boxShadow: '0 0 10px rgba(0,0,0,0.5)',
-            padding: '10px',
-            overflow: 'auto',
-            maxHeight: '100%',
-            maxWidth: '100%',
-            position: 'relative',
-            zIndex: '1000',
-            }} 
-           > 
+        <dib > 
             <h6>Coa - Revestimientos     <br />
           Tel:  11-3313-8900 / 11-3324-9832 
             <br />  
-            <a href="mailto:cubas_beto@hotmail.com">cubas_beto@hotmail.com</a>
-
-          </h6>
-
-           </dib>
-
-        <div
-    
-           
-        >
+            <a href="mailto:cubas_beto@hotmail.com">cubas_beto@hotmail.com</a> </h6>
+           </dib> 
+            <div className="form-group"   >
     <h6> Fecha Presupuesto  <span> : { fechaActual }</span> <br /> 
    Empresa: { formValues.empresa.map(empresa => empresa.empresa) }</h6>
-
    </div>
     <hr 
     style={{
@@ -166,7 +145,7 @@ console.log(formValues.empresa.map(empresa => empresa.nombre)
 
         </div>
         <br />
-        <div  id="scroll-1">
+        <div  >
         <div className="form-group"
   
         >            
@@ -221,24 +200,44 @@ console.log(formValues.empresa.map(empresa => empresa.nombre)
         </button>
 
         </ div>
-        <Pdf targetRef={ref} filename="Presupuesto.pdf"
-        options={{          
-            format: [14,8] ,
-            unit: 'in',          
-            orientation: 'portrait',    
-            html2canvas: { scale: 2 },
 
-            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
-            pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+       
           
-              }}      
-        >
+      
 
 
- {({ toPdf }) => <button  className="btn btn-primary fabbpdf" onClick={toPdf}></button>}
- </Pdf>
+
+    <button  className="btn btn-primary fabbpdf" onClick={ () =>  exportComponentAsPNG(componentRef, {
+        fileName: "presupuesto",
+        backgroundColor: "white",
+        html2CanvasOptions: {
+            scale: 0.7,            
+            useCORS: true,
+            allowTaint: true,
+            logging: true,
+            width: 800,
+            height: 1500,
+            x: 200,
+            y: 0,
+            scrollX: 0,
+            scrollY: -window.scrollY,
+
+
+        } ,
+
+
+    
+    }) } >
+    </button>
+
+
+
+
    </Modal>
   
     </>
   )
 }
+
+
+
