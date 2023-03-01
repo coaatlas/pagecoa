@@ -217,7 +217,7 @@ const componentRef = useRef();
             logging: true,
             width: 800,
             height: 1500,
-            x: 200,
+            x: 0,
             y: 0,
             scrollX: 0,
             scrollY: -window.scrollY,
