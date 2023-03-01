@@ -211,11 +211,11 @@ const componentRef = useRef();
         fileName: "presupuesto",
         backgroundColor: "white",
         html2CanvasOptions: {
-            scale: 1,          
+            scale: 1.5,          
             useCORS: true,
             allowTaint: true,
             logging: true,
-            width: 800,
+            width: 600,
             height: 1500,
             x: 0,
             y: 0,
