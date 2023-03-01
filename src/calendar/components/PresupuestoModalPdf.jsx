@@ -115,7 +115,15 @@ const componentRef = useRef();
         
     <div   >
         <form className="container" ref={componentRef}  >
-        <br />
+        <hr 
+    style={{
+        color: 'black',
+        backgroundColor: 'black',
+        height: 3,
+        borderColor : 'black',
+        zIndex: '1000',
+    }}
+    />
         <dib > 
             <h6>Coa - Revestimientos     <br />
           Tel:  11-3313-8900 / 11-3324-9832 
@@ -144,7 +152,7 @@ const componentRef = useRef();
             fontSize: '20px' }}>Productos</label>          
 
         </div>
-        <br />
+      
         <div  >
         <div className="form-group"
   

@@ -10,8 +10,7 @@ export const FooterPresupuestos = () => {
   const year = fecha.getFullYear();
   return (
    <>
-          <br />
-          <br />
+         
       <div >
                 <span   style={{textAlign: 'left', color: 'black', fontSize: '11px' }}>Los precios son sujetos a cambios sin previo aviso</span> <br/>
                 <span   style={{textAlign: 'left', color: 'black', fontSize: '11px' }}>Los precios no incluyen IVA</span> <br/>
