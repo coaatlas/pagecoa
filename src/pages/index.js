@@ -18,6 +18,7 @@ export * from './Ituzaingo';
 export * from './BlogPage';
 export * from './Clientes';
 export * from './Productos';
+export * from './LaboratorioTortuguitas';
 
 
 

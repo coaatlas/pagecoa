@@ -1755,6 +1755,165 @@ const itemData = [
         title: 'Ituzaingo',
         author : 'Coa Revestimientos',
     },
+    {
+        id: 287,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/1.jpg?raw=true',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 288,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/2.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 289,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/3.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 290,    
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/4.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 291,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/5.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 292,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/6.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 293,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/7.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 294,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/8.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 295,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/9.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 296,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/10.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 297,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/11.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 298,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/12.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 299,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/13.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 300,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/14.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 301,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/15.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 302,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/16.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 303,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/17.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 304,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/18.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 305,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/19.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 306,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/20.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 307,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/21.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 308,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/22.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
+    {
+        id: 309,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/23.jpg?raw=true  ',
+        title: 'LaboratorioTortiguitas',
+        author : 'Coa Revestimientos',
+    },
+
 
 
          

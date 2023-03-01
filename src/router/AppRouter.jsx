@@ -21,6 +21,7 @@ import { Baradero,
          JesusMariaCdba,
          LabChacarita,
          Laboratorio9DeJulio,
+         LaboratorioTortuguitas,
          MontesDeOca,
          NotFound,
          Portfolio,
@@ -94,6 +95,7 @@ export const AppRouter = () => {
         <Route path="/hospitalvarela" element={<HospitalVarela />} />
         <Route path="/bariloche" element={<Bariloche/>} />
         <Route path="/ituzaingo" element={<Ituzaingo/>} />
+        <Route path="/laboratoriotortuguitas" element={<LaboratorioTortuguitas/>} />
         <Route path="/videoscoa" element={<CoaVideos />} />   
         <Route path="/blog" element={<BlogPage />} />   
         <Route path="/contact" element={<Contact />} />        
