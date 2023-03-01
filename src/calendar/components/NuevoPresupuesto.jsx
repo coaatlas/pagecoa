@@ -62,15 +62,16 @@ useEffect(() => {
                     <thead
                         className="table-dark text-center">
                         <tr rowSpan="4"><th colSpan="9" scope="col">Presupuesto : <span>{fechaActual}</span></th></tr>
-                        <tr>                     
+                        <tr> 
+                        <th  colSpan="3" >                            
+                        </th>                    
                         <th scope="col">Productos</th>
                         <th scope="col">valor<sup>(m<sup>2</sup>)</sup></th>
                         <th scope="col">Total  Presupuestado </th>
                         <th scope="col">cantidad<sup>(mts<sup>2</sup>)</sup> Presupuestado </th>
                         <th scope="col">Cliente</th>
                         <th scope="col">Empresa</th> 
-                        <th  colSpan="3" >                            
-                        </th>
+                      
                          </tr>
                     </thead>
                     <tbody>                       
@@ -80,16 +81,8 @@ useEffect(() => {
                             ? <tr><td colSpan="7" className="text-center">No hay productos</td></tr>
 
                             :presupuestos.map(item => (
-                                    <tr key={item.id}>                                                           
-                                        <td>{item.pedido.map((item) => (<ProductoResumen  key={item.nombre} producto={item.nombre} />)  )} </td>
-                                        <td>{item.pedido.map((item) => (<PrecioResumen  key={item.precio} precio={item.precio} />)  )} </td>
-                                        <td><span style={{border: 'none',color:'green', fontSize: '0.9rem'}}>&#65284;</span><span style={{border: 'none',color:'red', fontSize: '0.9rem'}}>{item.total }</span></td>
-                                        <td><span style={{border: 'none',color:'red', fontSize: '0.9rem'}}>{item.cantidad }<span style={{border: 'none',color:'green', fontSize: '0.9rem'}}><sup>( m<sup>2</sup>)</sup></span></span></td>
-                                       <td>{item.empresa.map((item) => ( <ClienteResumen  key={item.email} nombre={item.nombre} />)  ) }  </td>  
-                                        <td>{item.empresa.map((item) => ( <ClienteEmpresaResumen  key={item.empresa} empresa={item.empresa} />)  ) }
-                                            
-                                            </td>   
-                                        <td>
+                                    <tr key={item.id}>  
+                                      <td>
                                             <span 
                                             type="button"
                                             style={{cursor: 'pointer', color: 'green' }}
@@ -112,7 +105,16 @@ useEffect(() => {
                                             onClick={() => handlePdf(item)}>
                                           <i className="fas fa-solid fa-file-pdf"></i>
                                             </span>    
-                                        </td>                              
+                                        </td>                                                            
+                                        <td>{item.pedido.map((item) => (<ProductoResumen  key={item.nombre} producto={item.nombre} />)  )} </td>
+                                        <td>{item.pedido.map((item) => (<PrecioResumen  key={item.precio} precio={item.precio} />)  )} </td>
+                                        <td><span style={{border: 'none',color:'green', fontSize: '0.9rem'}}>&#65284;</span><span style={{border: 'none',color:'red', fontSize: '0.9rem'}}>{item.total }</span></td>
+                                        <td><span style={{border: 'none',color:'red', fontSize: '0.9rem'}}>{item.cantidad }<span style={{border: 'none',color:'green', fontSize: '0.9rem'}}><sup>( m<sup>2</sup>)</sup></span></span></td>
+                                       <td>{item.empresa.map((item) => ( <ClienteResumen  key={item.email} nombre={item.nombre} />)  ) }  </td>  
+                                        <td>{item.empresa.map((item) => ( <ClienteEmpresaResumen  key={item.empresa} empresa={item.empresa} />)  ) }
+                                            
+                                            </td>   
+                                                                 
                                     </tr> 
                                 ))
                             }                                       
