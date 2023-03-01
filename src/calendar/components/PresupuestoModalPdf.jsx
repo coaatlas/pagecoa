@@ -216,7 +216,7 @@ const componentRef = useRef();
             allowTaint: true,
             logging: true,
             width: 400,
-            height: 1500,
+            height: 1000,
             x: 0,
             y: 0,
             scrollX: 0,
