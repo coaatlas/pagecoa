@@ -11,7 +11,7 @@ export const LaboratorioTortuguitas = () => {
     <>
     <BannerPortfolio
     descrip={"Nuestras Obras"}
-    titulo={"Hospital Ituzaingó"}
+    titulo={"Laboratorio Tortuguitas"}
      />   
     <br />
 

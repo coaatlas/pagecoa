@@ -43,15 +43,12 @@ export const AppRouter = () => {
    if (status==='checking') {
     return (
       <>
-
       <br />
       <br />
       <br />
       <br />
       <br />
       <br />
-        
-
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-6 login-form-1">
@@ -59,15 +56,13 @@ export const AppRouter = () => {
           </div>
         </div>
       </div>
-
       </>
     )
    }
   
   return (
    <>      
-    <NavBar1/> 
-  
+    <NavBar1/>   
     <Routes>
       {
         status === 'authenticated' ?
@@ -78,9 +73,6 @@ export const AppRouter = () => {
         <Route path="/presupuesto" element={<PresupuestoPage />} />
         <Route path="/clientes" element={<Clientes />} />
         <Route path="/productos" element={<Productos />} />
-
-
-
         <Route path="/home" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/radiologoaformosa" element={<RadiologiaFormosa />} />
@@ -122,17 +114,12 @@ export const AppRouter = () => {
            <Route path="/contact" element={<Contact />} /> 
            <Route path="/login" element={<LoginPages />} />
            <Route path="*" element={<NotFound />} />
-        </>
-        
+        </>        
       }
-
         
     </Routes>   
-
-    <Footer />
-    
-    <Copirrigth  />
-   
+    <Footer />    
+    <Copirrigth  />   
    </>
   )
 }
