@@ -215,7 +215,7 @@ const componentRef = useRef();
             useCORS: true,
             allowTaint: true,
             logging: true,
-            width: 500,
+            width: 400,
             height: 1500,
             x: 0,
             y: 0,
