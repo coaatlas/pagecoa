@@ -57,9 +57,9 @@ export const GaleriaImgComponent=({tittle})=> {
         return (
           <ImageListItem key={items.img} cols={cols} rows={rows}>
             <img
-              {...srcset(items.img, 200, 300, rows, cols)}
+              {...srcset(items.img, 400, 400, rows, cols)}
               alt={items.title}
-              loading="lazy"
+              loading="lazy"           
             />              
             <ImageListItemBar
               sx={{
