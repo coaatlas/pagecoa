@@ -12,7 +12,7 @@ export const BannerComponent = ({descrip}) => {
              
                     <h3 className="text-white "
 
-                    style={{fontSize: "1.5rem", fontWeight: "bold", lineHeight: "1.2", marginBottom: "0.5rem", marginTop: "0.5rem"}}
+                    style={{fontSize: "1.1rem", fontWeight: "bold", lineHeight: "1.2", marginBottom: "0.5rem", marginTop: "0.5rem"}}
 
 
                     >{descrip}</h3>

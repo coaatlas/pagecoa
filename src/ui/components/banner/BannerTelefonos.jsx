@@ -11,7 +11,9 @@ export const BannerTelefonos = () => {
                                 </div>
                                 <div className="ms-3">
                                     <p className="mb-2">Email us</p>
-                                    <h5 className="mb-0 text-white">cubas_beto@hotmail.com</h5>
+                                    <h5 className="mb-0 text-white"
+                                    style={{fontSize: "1.1rem", fontWeight: "bold", lineHeight: "1.2", marginBottom: "0.5rem", marginTop: "0.5rem"}}
+                                    >cubas_beto@hotmail.com</h5>
                                 </div>
                             </div>
                         </div>
@@ -22,7 +24,9 @@ export const BannerTelefonos = () => {
                                 </div>
                                 <div className="ms-3">
                                     <p className="mb-2">Call us</p>
-                                    <h5 className="mb-0 text-white">11-3313-8900 / 11-3324-9832 </h5>
+                                    <h5 className="mb-0 text-white"
+                                    style={{fontSize: "1.1rem", fontWeight: "bold", lineHeight: "1.2", marginBottom: "0.5rem", marginTop: "0.5rem"}}
+                                    >11-3313-8900 / 11-3324-9832 </h5>
                                 </div>
                             </div>
                         </div>
