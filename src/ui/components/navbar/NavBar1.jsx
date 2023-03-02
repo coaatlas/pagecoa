@@ -161,9 +161,36 @@ export const NavBar1 = () => {
                  className={ ({ isActive }) => `nav-link dropdownn   ${isActive ? 'active ':''}` } >  
             <button   className="btn"  data-bs-toggle="collapse" data-bs-target="#navbarCollapse" > Portfolio</button></NavLink>  
 
-                <div className="nav-item  dropdownn" >
+                <div className="nav-item  dropdownn" 
+                
+                >
                 <NavLink  className="nav-link" >   <button className="btn dropdown-toggle">Obras</button></NavLink >
   <div className="dropdownn-content bg-light m-0"
+  style={{
+    color: "white !important",
+    fontFamily: "Roboto",
+    fontSize: "17px",
+    fontWeight: "bold",
+    textAlign: "left",
+    textShadow: "2px 2px 4px #000000",
+    textTransform: "uppercase",
+    textDecorationColor: "white",
+    textDecorationStyle: "double",
+    textDecorationThickness: "4px",
+    textUnderlineOffset: "10px",
+    textRendering: "optimizeLegibility",
+    textOrientation: "upright",
+    textOverflow: "clip",
+    textIndent: "0px",
+    textJustify: "auto",
+    textKashida: "auto",
+    textKashidaSpace: "0px",
+    overflowY: "scroll",
+    height: "35vh",
+    width: "150%",
+
+
+}}
  
   >
   <NavLink    to="/radiologoaformosa"          className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Formosa</button></NavLink >
