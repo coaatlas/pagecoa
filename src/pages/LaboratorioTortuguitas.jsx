@@ -11,7 +11,7 @@ export const LaboratorioTortuguitas = () => {
     <>
     <BannerPortfolio
     descrip={"Nuestras Obras"}
-    titulo={"Laboratorio Tortuguitas"}
+    titulo={"Lab. Tortuguitas"}
      />   
     <br />
 
@@ -19,7 +19,7 @@ export const LaboratorioTortuguitas = () => {
     children={<GaleriaImgComponent tittle="LaboratorioTortuguitas" value={100}      />}
 
     
-    titulo={"Laboratorio Tortuguitas"}
+    titulo={"Lab. Tortuguitas"}
     subtitulo={"Pisos"}
     descrip={"instalación de revestimientos en pisos con revestimiento vinilicos"}
     titulo1={"Pisos"}
