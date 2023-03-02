@@ -13,7 +13,7 @@ export const BannerPortfolio = ({descrip,titulo}) => {
         style={{
             color: "white !important",
             fontFamily: "Roboto",
-            fontSize: "40px",
+            fontSize: "30px",
             fontWeight: "bold",
             textAlign: "left",
             textShadow: "2px 2px 4px #000000",
