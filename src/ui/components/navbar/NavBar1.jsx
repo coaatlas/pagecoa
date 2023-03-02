@@ -164,7 +164,7 @@ export const NavBar1 = () => {
                 <div className="nav-item  dropdownn" >
                 <NavLink  className="nav-link" >   <button className="btn dropdown-toggle">Obras</button></NavLink >
   <div className="dropdownn-content bg-light m-0"
-  scrollable="true"
+ 
   >
   <NavLink    to="/radiologoaformosa"          className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Formosa</button></NavLink >
   <NavLink    to="/laboratorio9dejulio"        className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">9 de Julio</button></NavLink >

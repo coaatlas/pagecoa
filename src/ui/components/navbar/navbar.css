@@ -30,6 +30,11 @@
  .dropdownn {
     display: inline-block;
     position: relative;
+    
+    height: 300px;
+	width: 200px;
+  overflow-y: scroll;
+
   }
 
   .dropdownn button {
