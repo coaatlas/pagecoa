@@ -28,11 +28,7 @@ export const CalendarNavBar = () => {
   textDecoration: 'none',
   color: 'white',
 }} >   <i className="fas fa-user-plus"></i>
-  <span
-  style={{
-   
-    fontSize: '0.8rem',
-  }} > Registro </span> </Link>
+ </Link>
     </button>
     &nbsp;  
     <button className='btn btn-outline-danger '>   
