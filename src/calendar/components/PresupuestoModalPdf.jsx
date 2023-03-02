@@ -193,13 +193,10 @@ const componentRef = useRef();
             fontSize: '20px' }}>Productos Cotizados</label>  
               </div>      
         <div  >
-        <div className="form-group"
-  
-        >            
+        <div className="form-group">            
             { 
                 formValues.pedido.map( pedido => (
-                    <p className="contenido"
-                
+                    <p className="contenido"              
 
                      key={ n++ }> <span
                         style={{
@@ -218,9 +215,7 @@ const componentRef = useRef();
                                 marginBottom: '-5px',
                             }}
                             />
-                            </p>
-
-                   
+                            </p>                  
                 ))
             }    
              <p style={{
@@ -228,10 +223,8 @@ const componentRef = useRef();
             color: 'black' ,
            
             fontSize: '10px' }}>* valor del m<sup>2</sup>  </p>        
-        </div>
-      
-      
-        <hr 
+        </div>  
+           <hr 
     style={{
         color: 'black',
         backgroundColor: 'black',
@@ -282,15 +275,7 @@ const componentRef = useRef();
             onClick={ onCloseModalPdf }  >
             <i className="far fa-window-close"></i>
         </button>
-
-        </ div>
-
-       
-          
-      
-
-
-
+        </div>
     <button  className="btn btn-primary fabbpdf" onClick={ () =>  exportComponentAsPNG(componentRef, {
         fileName: "presupuesto",
         backgroundColor: "white",
@@ -308,28 +293,12 @@ const componentRef = useRef();
             windowWidth: 500,
             windowHeight: 900,
             backgroundColor: "white",
-            imageTimeout: 15000,            
-        
-
-
-        
-         
-
-
-
-
-        } ,
-
-
-    
-    }) } >
-    </button>
-
-
-
-
-   </Modal>
-  
+            imageTimeout: 15000,  
+           } ,
+         }) } >
+     </button>
+     </Modal>
+      
     </>
   )
 }
