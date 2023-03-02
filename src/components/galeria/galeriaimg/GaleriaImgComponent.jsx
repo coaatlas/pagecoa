@@ -47,7 +47,7 @@ export const GaleriaImgComponent=({tittle})=> {
      return (
     <ImageList
     sx={{ width: { xs: 250, sm: 550 }, height: 420, overflowY: 'scroll' }}
-      rowHeight={420}
+      rowHeight={370}
       gap={4}
     >
       {items.map((items) => {
