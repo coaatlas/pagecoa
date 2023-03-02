@@ -46,9 +46,17 @@ export const GaleriaImgComponent=({tittle})=> {
      } else{
      return (
     <ImageList
-    sx={{ width: { xs: 250, sm: 550 }, height: 420, overflowY: 'scroll' }}
+    sx={{ width: { xs: 250, sm: 550 }, height: 420, overflowY: 'scroll',
+    overflowX: 'hidden', margin: 'auto', padding: '0px', 
+    display: 'flex', justifyContent: 'center', alignItems: 'center' 
+    
+   }}
       rowHeight={370}
       gap={4}
+
+      
+
+
     >
       {items.map((items) => {
         const cols = items.featured ? 2 : 1;
