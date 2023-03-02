@@ -10,7 +10,12 @@ export const BannerComponent = ({descrip}) => {
           
                 <div className="text-white ">
              
-                    <h3 className="text-white ">{descrip}</h3>
+                    <h3 className="text-white "
+
+                    style={{fontSize: "1.5rem", fontWeight: "bold", lineHeight: "1.2", marginBottom: "0.5rem", marginTop: "0.5rem"}}
+
+
+                    >{descrip}</h3>
                     <BannerTelefonos />
                 </div>
             </div>
