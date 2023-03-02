@@ -187,7 +187,7 @@ export const NavBar1 = () => {
     textKashidaSpace: "0px",
     overflowY: "scroll",
     height: "35vh",
-    width: "135%",
+    width: "138%",
 
 
 }}
