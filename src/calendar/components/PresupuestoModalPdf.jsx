@@ -137,9 +137,15 @@ const componentRef = useRef();
             <br />  
             <a href="mailto:cubas_beto@hotmail.com">cubas_beto@hotmail.com</a> </h6>
            </dib> 
-            <div className="form-group"   >
+
+            <div className="form-group"   style={{
+      marginTop: '-40px',
+      marginRight: '20px',
+    }}
+  >
     <h6
     style={{
+    
         textAlign: 'right' ,
         color: 'black' ,
         fontWeight: 'bold' ,
@@ -150,7 +156,12 @@ const componentRef = useRef();
    </div>
 
 
-   <div className="form-group"   >
+   <div className="form-group"
+  style={{
+  
+    marginRight: '20px',
+  }}
+   >
 
    <h6
     style={{
@@ -163,13 +174,7 @@ const componentRef = useRef();
    
 
    </div>
-   
-
-
-
-
-   
-    <hr 
+     <hr 
     style={{
         color: 'black',
         backgroundColor: 'black',
@@ -210,6 +215,7 @@ const componentRef = useRef();
                                 borderColor : 'black',
                                 zIndex: '1000',
                                 marginTop: '0px',
+                                marginBottom: '-5px',
                             }}
                             />
                             </p>
@@ -293,13 +299,13 @@ const componentRef = useRef();
             useCORS: true,
             allowTaint: true,
             logging: true,
-            width: 400,
+            width: 500,
             height: 900,
             x: 0,
             y: 0,
             scrollX: 0,
             scrollY: -window.scrollY,
-            windowWidth: 400,
+            windowWidth: 500,
             windowHeight: 900,
             backgroundColor: "white",
             imageTimeout: 15000,            
