@@ -16,7 +16,7 @@ export const CalendarNavBar = () => {
       justifyContent: 'space-between',
      
       color: 'white',
-      fontSize: '11px',
+      fontSize: '10px',
      
     }}
      >
