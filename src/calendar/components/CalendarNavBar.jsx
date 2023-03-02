@@ -28,7 +28,11 @@ export const CalendarNavBar = () => {
   textDecoration: 'none',
   color: 'white',
 }} >   <i className="fas fa-user-plus"></i>
-  <span> Registro </span> </Link>
+  <span
+  style={{
+   
+    fontSize: '0.8rem',
+  }} > Registro </span> </Link>
     </button>
     &nbsp;  
     <button className='btn btn-outline-danger '>   
@@ -38,7 +42,10 @@ export const CalendarNavBar = () => {
   color: 'white',
 
 }} > <i className="fas fa-file-invoice"></i>
-  <span> presupuestos </span> </Link>
+  <span
+  style={{   
+    fontSize: '0.8rem',
+  }}  > presupuestos </span> </Link>
     </button>
 
 
