@@ -126,14 +126,49 @@ const componentRef = useRef();
     />
         <dib > 
             <h6>Coa - Revestimientos     <br />
-          Tel:  11-3313-8900 / 11-3324-9832 
+          <span
+            style={{
+                fontSize: '11px',
+                color: 'black',
+                fontWeight: 'bold',
+                textAlign: 'left',
+            }}
+          >Tel:  11-3313-8900 / 11-3324-9832 </span>
             <br />  
             <a href="mailto:cubas_beto@hotmail.com">cubas_beto@hotmail.com</a> </h6>
            </dib> 
             <div className="form-group"   >
-    <h6> Fecha Presupuesto  <span> : { fechaActual }</span> <br /> 
-   Empresa: { formValues.empresa.map(empresa => empresa.empresa) }</h6>
+    <h6
+    style={{
+        textAlign: 'right' ,
+        color: 'black' ,
+        fontWeight: 'bold' ,
+        fontSize: '10px'
+    }}
+    > Fecha Presupuesto  <span> : { fechaActual }</span>  </h6>
+  
    </div>
+
+
+   <div className="form-group"   >
+
+   <h6
+    style={{
+        textAlign: 'right' ,
+        color: 'black' ,
+        fontWeight: 'bold' ,
+        fontSize: '10px'
+    }}
+    > Empresa <span> : { formValues.empresa.map(empresa => empresa.empresa) }</span>  </h6>
+   
+
+   </div>
+   
+
+
+
+
+   
     <hr 
     style={{
         color: 'black',
@@ -141,6 +176,7 @@ const componentRef = useRef();
         height: 3,
         borderColor : 'black',
         zIndex: '1000',
+     
     }}
     />
         <div className="form-group"   >
@@ -149,10 +185,8 @@ const componentRef = useRef();
             textAlign: 'left' ,
             color: 'black' ,
             fontWeight: 'bold' ,
-            fontSize: '20px' }}>Productos</label>          
-
-        </div>
-      
+            fontSize: '20px' }}>Productos Cotizados</label>  
+              </div>      
         <div  >
         <div className="form-group"
   
@@ -162,7 +196,25 @@ const componentRef = useRef();
                     <p className="contenido"
                 
 
-                     key={ n++ }> N° { n + 1 } : { pedido.nombre } - $  { pedido.precio } <sup>(el m<sup>2</sup>)</sup></p>
+                     key={ n++ }> <span
+                        style={{
+                            color: 'black' ,
+                            fontWeight: 'bold' ,
+                            fontSize: '12px' }}>N° { n + 1 }</span> : { pedido.nombre } - $  { pedido.precio } <sup>(el m<sup>2</sup>)</sup>
+
+                            <hr 
+                            style={{
+                                color: 'black',
+                                backgroundColor: 'black',
+                                height: 1,
+                                borderColor : 'black',
+                                zIndex: '1000',
+                                marginTop: '0px',
+                            }}
+                            />
+                            </p>
+
+                   
                 ))
             }    
              <p style={{
@@ -173,18 +225,36 @@ const componentRef = useRef();
         </div>
       
       
-        <hr />
+        <hr 
+    style={{
+        color: 'black',
+        backgroundColor: 'black',
+        height: 3,
+        borderColor : 'black',
+        zIndex: '1000',
+     
+    }}
+    />
         <p style={{
             textAlign: 'left' ,
             color: 'black' ,
             fontWeight: 'bold' ,
-            fontSize: '16px' }}>Presupuestado : {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup></p>
+            fontSize: '16px' }}>Metros Presupuestado : {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup></p>
             <p style={{
             textAlign: 'left' ,
             color: 'black' ,
            
             fontSize: '10px' }}>* Cantidad de mts<sup>2</sup> presupuestados  </p>
-        <hr />
+         <hr 
+    style={{
+        color: 'black',
+        backgroundColor: 'black',
+        height: 3,
+        borderColor : 'black',
+        zIndex: '1000',
+     
+    }}
+    />
         <div className="form-group">
             <label
             style={{
@@ -219,7 +289,7 @@ const componentRef = useRef();
         fileName: "presupuesto",
         backgroundColor: "white",
         html2CanvasOptions: {
-            scale:4,       
+            scale:2,       
             useCORS: true,
             allowTaint: true,
             logging: true,
@@ -229,6 +299,17 @@ const componentRef = useRef();
             y: 0,
             scrollX: 0,
             scrollY: -window.scrollY,
+            windowWidth: 400,
+            windowHeight: 900,
+            backgroundColor: "white",
+            imageTimeout: 15000,            
+        
+
+
+        
+         
+
+
 
 
         } ,

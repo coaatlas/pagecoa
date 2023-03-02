@@ -51,6 +51,18 @@
     top: 10px;
 }
 
+.btn-guardar {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 35px;
+    top: 10px;
+}
+
 .btn-close:hover {
     color: rgb(255, 0, 0);
   

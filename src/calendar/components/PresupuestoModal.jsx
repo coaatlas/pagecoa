@@ -253,7 +253,7 @@ let n = 1;
      
         <button
             type="submit"
-            className="btn btn-outline-primary btn-block"
+            className="btn btn-outline-primary btn-block btn-guardar "
             onClick={ onSumbitForm } >
             <i className="far fa-save"></i>
             <span> Guardar</span>

@@ -38,10 +38,7 @@ export const CalendarNavBar = () => {
   color: 'white',
 
 }} > <i className="fas fa-file-invoice"></i>
-  <span
-  style={{   
-    fontSize: '0.8rem',
-  }}  > presupuestos </span> </Link>
+  </Link>
     </button>
 
 
