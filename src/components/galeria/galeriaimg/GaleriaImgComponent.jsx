@@ -46,7 +46,7 @@ export const GaleriaImgComponent=({tittle})=> {
      } else{
      return (
     <ImageList
-    sx={{ width: { xs: 210, sm: 550 }, height: 650, overflowY: 'scroll' }}
+    sx={{ width: { xs: 240, sm: 550 }, height: 650, overflowY: 'scroll' }}
       rowHeight={400}
       gap={4}
     >
@@ -57,10 +57,12 @@ export const GaleriaImgComponent=({tittle})=> {
         return (
           <ImageListItem key={items.img} cols={cols} rows={rows}>
             <img
-              {...srcset(items.img, 400, 400, rows, cols)}
+              {...srcset(items.img, 200, 300, rows, cols)}
               alt={items.title}
               loading="lazy"           
-            />              
+            />    
+           
+                      
             <ImageListItemBar
               sx={{
                 background:
