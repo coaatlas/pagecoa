@@ -190,52 +190,11 @@ let n = 1;
             getOptionLabel={(option) => option.nombre}
             getOptionValue={(option) => option.id}
             onChange={ (e) => seleccienarc(e) }
-            components={animatedComponents}   
-         
-          
+            components={animatedComponents}            
             menuShouldScrollIntoView={true}
-            />
-         
+            />         
         </div>      
-        <hr />
-   
-        <div className="form-group">
-            <label >Producto</label>
-
-          
-            <Select
-            options={ productos }         
-            isMulti
-            getOptionLabel={(option) =>option .nombre  }           
-            getOptionValue={(option) => option.id}
-            onChange={ (e) => seleccionarp(e) }      
-            components={animatedComponents}              
-            />  
-              </div>
-           
-        <br />
-         
-        <div className="form-group"  id='scroll-2'>
-            <label>Precio</label>
-           
-             
-            { 
-                formValues.pedido.map( pedido => (
-                    <p key={ n++ }
-                    style={{ color: 'red' ,
-                    fontSize: '0.8rem'}} >
-                        { pedido.nombre } :$  { pedido.precio }</p>
-                ))
-            }    
-
-            <p
-            style={{ color: 'green' ,
-            fontSize: '0.8rem'}} >
-
-            Total: { formValues.total}</p>        
-        </div>
-        
-        <br />
+        <hr />  
         <div className="form-group">
             <label>Cantidad <sup>(x m<sup>2</sup>)</sup> a Presupuestar</label>
             <input
@@ -248,8 +207,38 @@ let n = 1;
                 onChange={ onInputChangedCantidad }
 
             />   
-        </div>
-        <hr />
+        </div> 
+        <hr />  
+        <div className="form-group">
+            <label >Producto</label>          
+            <Select
+            options={ productos }         
+            isMulti
+            getOptionLabel={(option) =>option .nombre  }           
+            getOptionValue={(option) => option.id}
+            onChange={ (e) => seleccionarp(e) }      
+            components={animatedComponents}              
+            />  
+              </div>           
+        <br />         
+        <div className="form-group"  id='scroll-2'>
+            <label>Precio</label>          
+             
+            { 
+                formValues.pedido.map( pedido => (
+                    <p key={ n++ }
+                    style={{ color: 'red' ,
+                    fontSize: '0.8rem'}} >
+                        { pedido.nombre } :$  { pedido.precio }</p>
+                ))
+            }  
+            <p
+            style={{ color: 'green' ,
+            fontSize: '0.8rem'}} >
+
+            Total: { formValues.total}</p>        
+        </div>  
+       <hr />
      
         <button
             type="submit"
