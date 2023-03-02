@@ -10,7 +10,16 @@ export const CalendarNavBar = () => {
   return (
     <>
     <div className='navbar navbar-dark bg-dark mb-4 px-4' >
-    <span  >
+    <span 
+    style={{
+      display: 'flex',
+      justifyContent: 'space-between',
+     
+      color: 'white',
+      fontSize: '11px',
+     
+    }}
+     >
       <i className='fas fa-calendar-alt fa-2x' >&nbsp;{user.name} </i>      
     </span>
    
