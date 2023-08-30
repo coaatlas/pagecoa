@@ -61,7 +61,7 @@ export const AppRouter = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-6 login-form-1">
-            <h3>Cargando...</h3>
+            <h3>Cargando</h3>
           </div>
         </div>
       </div>
