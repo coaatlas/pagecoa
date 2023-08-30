@@ -9,7 +9,7 @@ export const CarrouselComponent = () => {
         <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img className="w-100" src="https://github.com/leofa741/coavsan/blob/master/src/assets/img/carousel-1.jpg?raw=true" alt="Image"/>
+                    <img className="w-100" src="https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/8.jpg?raw=true" alt="Image"/>
                     <div className="carousel-caption">
                         <div className="container">
                             <div className="row justify-content-center">
