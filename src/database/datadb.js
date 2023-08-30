@@ -2426,7 +2426,439 @@ const itemData = [
         img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LabCelnova/6.jpg?raw=true',
         title: 'Celnova',
         author : 'Coa Revestimientos',
-    }
+    },
+    {
+        id: 392,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/1.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 393,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/2.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 394,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/3.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 395,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/4.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 396,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/5.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 397,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/6.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 398,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/7.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 399,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/8.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 400,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/9.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 401,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/10.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 402,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/11.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 403,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/12.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 404,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/13.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 405,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/14.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 406,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/15.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 407,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/16.jpg?raw=true',
+        title: 'linicainvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 408,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/1.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 409,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/2.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 410,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/3.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 411,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/4.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 412,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/5.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 413,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/6.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 414,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/7.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 415,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/8.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 416,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/9.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 417,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/10.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 418,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/11.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 419,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/12.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 420,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/13.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 421,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/14.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 422,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/15.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 423,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/16.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 424,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/17.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 425,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/18.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 426,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/19.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 427,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/20.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 428,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/21.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 429,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/bavio/22.jpg?raw=true',
+        title: 'weizur',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 430,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/1.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 431,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/2.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 432,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/3.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 433,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/4.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 434,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/5.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 435,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/6.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 436,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/7.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 437,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/8.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 438,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/9.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 439,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/10.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 440,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/11.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 441,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/12.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 442,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/13.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 443,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/14.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 444,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/15.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 445,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/16.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 446,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/17.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 447,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/18.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 448,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/19.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 449,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/20.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 450,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/21.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 451,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/22.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 452,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/23.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 453,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/24.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 454,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/25.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 455,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/26.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 456,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/27.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 457,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/28.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 458,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/29.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 459,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/30.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 460,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/31.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 461,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/32.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 462,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/33.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: 463,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/oller/34.jpg?raw=true',
+        title: 'oller',
+        author : 'Coa Revestimientos',
+    },
 
 
 
@@ -2435,10 +2867,13 @@ const itemData = [
 
 
 
-         
 
-         
-         
+
+
+
+
+
+
 
 
 
