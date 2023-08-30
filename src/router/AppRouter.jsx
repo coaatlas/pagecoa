@@ -33,10 +33,14 @@ import { Baradero,
          Productos,
          RadiologiaFormosa,
          UnileverTortuguitas,
+         ClinicaInvap,
+         LaboratorioWiizur,
+         OllerSolano, 
        
       
          } from "../pages"
 import {Copirrigth, Footer, NavBar1 } from "../ui"
+
 
 
 export const AppRouter = () => {
@@ -106,6 +110,9 @@ export const AppRouter = () => {
         <Route path="/unilever" element={<UnileverTortuguitas />} />
         <Route path="/mercedes" element={<HospitalMercedes />} />
         <Route path="/celnova" element={<LavCelnova />} />
+        <Route path="/clinicainvap" element={<ClinicaInvap />} />
+        <Route path="/laboratoriowiizur" element={<LaboratorioWiizur/>} />
+        <Route path="/ollersolano" element={<OllerSolano/>} />
         <Route path="/videoscoa" element={<CoaVideos />} />   
         <Route path="/blog" element={<BlogPage />} />   
         <Route path="/contact" element={<Contact />} />        
@@ -133,6 +140,9 @@ export const AppRouter = () => {
            <Route path="/unilever" element={<UnileverTortuguitas />} />
            <Route path="/mercedes" element={<HospitalMercedes />} />
            <Route path="/celnova" element={<LavCelnova />} />
+           <Route path="/clinicainvap" element={<ClinicaInvap />} />
+           <Route path="/laboratoriowiizur" element={<LaboratorioWiizur/>} />
+           <Route path="/ollersolano" element={<OllerSolano/>} />
            <Route path="/videoscoa" element={<CoaVideos />} />   
            <Route path="/contact" element={<Contact />} /> 
            <Route path="/login" element={<LoginPages />} />

@@ -25,6 +25,9 @@ export * from './PresupuestoPdfGenerar';
 export * from './UnileverTortuguitas';
 export * from './HospitalMercedes';
 export * from './LabCelnova';
+export * from './ClinicaInvap';
+export * from './LaboratorioWiizur';
+export * from './OllerSolano';
 
                
 

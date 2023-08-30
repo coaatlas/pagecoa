@@ -209,7 +209,11 @@ export const NavBar1 = () => {
   <NavLink    to="/labvillamartelli"           className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Lab. V.Martelli</button></NavLink >
   <NavLink    to="/unilever"                   className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Unilever Tort.</button></NavLink >
   <NavLink    to="/mercedes"                   className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Hosp. Mercedes</button></NavLink >
-  <NavLink    to="/celnova"                   className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Lab. Celnova</button></NavLink >
+  <NavLink    to="/celnova"                    className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Lab. Celnova</button></NavLink >
+  <NavLink    to="/clinicainvap"               className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Clinica invap</button></NavLink >
+  <NavLink    to="/laboratoriowiizur"          className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Lab Weizur</button></NavLink >
+  <NavLink    to="/ollersolano"                className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Hosp. Oller </button></NavLink >
+ 
   </div>
 </div>
 
