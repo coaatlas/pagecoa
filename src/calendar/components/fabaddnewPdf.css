@@ -1,0 +1,130 @@
+
+
+.fabb{
+    border-radius: 50%;    
+    bottom: 25px;   
+    font-size: 10px;   
+    position: fixed;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: url(../../assets/img/Plus.png) no-repeat;
+    background-size: 50%;
+    background-color: rgba(41, 199, 9, 0.514)!important;
+    background-position: center;
+    color: white!important;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1999 ;      
+}
+
+.fabb:hover{ 
+    background: url(../../assets/img/edit.png) no-repeat;
+    background-size: 50%;
+    background-color: rgba(41, 199, 9, 0.514)!important;
+    background-position: center;
+    color: white!important;
+    border: none;   
+    rotate: 360deg;
+    transform: rotate(360deg);
+    transition: 0.3s;
+    z-index: 1999 ;  
+} 
+
+.fabb-danger {
+    border-radius: 50%;    
+    bottom: 25px;   
+    font-size: 10px;   
+    position: fixed;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    background: url(../../assets/img/Delete1.png) no-repeat;
+    background-size: 50%;
+    background-color: rgba(243, 9, 9, 0.514)!important;
+    background-position: center;
+    color: white!important;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1999 ;  
+
+
+}
+
+.fabb-danger:hover{ 
+    background: url(../../assets/img/Delete.png) no-repeat;
+    background-size: 50%;
+    background-color: rgba(243, 9, 9, 0.514)!important;
+    background-position: center;
+    color: white!important;
+    border: none;   
+    rotate: 360deg;
+    transform: rotate(360deg);
+    transition: 0.3s;
+    z-index: 1999 ;  
+}
+
+
+.fabbpdf{
+    border-radius: 50%;    
+    bottom: 500px !important;
+    margin-right: 15px !important;
+    font-size: 10px;   
+    position: fixed;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background: url(../../assets/img/download-pdf-icon-png.webp) no-repeat;
+    background-size: 50%;
+    background-color:rgba(9, 243, 114, 0.514)!important;
+    background-position: center;
+    color: white!important;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1999 ;      
+}
+
+
+.fabbpdf:hover{ 
+    background: url(../../assets/img/descargar.png) no-repeat;
+    background-size: 50%;
+    background-color: rgba(41, 199, 9, 0.514)!important;
+    background-position: center;
+    color: white!important;
+    border: none;   
+    rotate: 360deg;
+    transform: rotate(360deg);
+    transition: 0.3s;
+    z-index: 1999 ;  
+} 
+
+
+
+
+@media screen and (max-width: 600px) {
+    .fabb{
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    .fabb-danger{
+        bottom: 15px;
+        left: 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .fabbpdf{
+        bottom: 500px !important;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+}
