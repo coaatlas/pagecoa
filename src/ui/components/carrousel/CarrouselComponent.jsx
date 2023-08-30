@@ -24,7 +24,7 @@ export const CarrouselComponent = () => {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img className="w-100" src="https://github.com/leofa741/coavsan/blob/master/src/assets/img/carousel-2.jpg?raw=true" alt="Image"/>
+                    <img className="w-100" src="https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/invap/1.jpg?raw=true" alt="Image"/>
                     <div className="carousel-caption">
                         <div className="container">
                             <div className="row justify-content-center">
