@@ -1,6 +1,7 @@
 import React from 'react'
 import { BannerPortfolio } from '../ui'
 import { GaleriaImgComponent } from '../components/galeria/galeriaimg/GaleriaImgComponent'
+import { LayoutsGaleria } from '../components/galeria/layoutgaleria/LayoutsGaleria'
 
 export const CentroRadiologicoFormosa = () => {
   return (
