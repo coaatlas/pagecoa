@@ -213,6 +213,7 @@ export const NavBar1 = () => {
   <NavLink    to="/clinicainvap"               className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Clinica invap</button></NavLink >
   <NavLink    to="/laboratoriowiizur"          className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Lab Weizur</button></NavLink >
   <NavLink    to="/ollersolano"                className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Hosp. Oller </button></NavLink >
+  <NavLink    to="/centro-radiologico-formosa" className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Rad. Formosa</button></NavLink >
  
   </div>
 </div>

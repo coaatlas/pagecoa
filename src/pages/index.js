@@ -28,6 +28,7 @@ export * from './LabCelnova';
 export * from './ClinicaInvap';
 export * from './LaboratorioWiizur';
 export * from './OllerSolano';
+export * from './CentroRadiologicoFormosa';
 
                
 

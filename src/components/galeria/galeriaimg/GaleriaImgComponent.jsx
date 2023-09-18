@@ -22,10 +22,8 @@ export const GaleriaImgComponent=({tittle})=> {
 
   const [items, setItems] = useState([]);
 
-  useEffect(() => {  
-    
-    fetchProductBytitle(2000,tittle).then((data) => setItems(data));
-  
+  useEffect(() => {      
+    fetchProductBytitle(2000,tittle).then((data) => setItems(data));  
   }, [tittle]);
 
   if (items.length === 0) {
@@ -37,8 +35,7 @@ export const GaleriaImgComponent=({tittle})=> {
         size={50}
         thickness={3}
         variant="indeterminate"
-        value={100}
-        
+        value={100}        
       />
       </Box>       
        </>
@@ -50,13 +47,9 @@ export const GaleriaImgComponent=({tittle})=> {
       margin: 'auto', padding: '0px'
     }, height: 420, overflowY: 'scroll',
     overflowX: 'hidden', margin: 'auto', padding: '0px'
-
    }}
       rowHeight={370}
-      gap={4}
-
-      
-
+      gap={4}    
 
     >
       {items.map((items) => {
@@ -69,9 +62,8 @@ export const GaleriaImgComponent=({tittle})=> {
               {...srcset(items.img, 200, 270, rows, cols)}
               alt={items.title}
               loading="lazy"           
-            />    
-           
-                      
+            />   
+                                 
             <ImageListItemBar
               sx={{
                 background:
@@ -84,9 +76,8 @@ export const GaleriaImgComponent=({tittle})=> {
                 <IconButton
                   sx={{ color: 'white' }}
                   aria-label={`star ${items.title}`} >
-                  <StarBorderIcon     />
-                </IconButton>
-                
+                  <StarBorderIcon  />
+                </IconButton>                
               }
               actionPosition="left" />
 
@@ -96,11 +87,9 @@ export const GaleriaImgComponent=({tittle})=> {
                       sx={{ color: 'white' }}
                       aria-label={`PersonIcon ${items.author}`} >
                       <PersonIcon/>
-                    </IconButton>
-                    
+                    </IconButton>                    
                   } 
-                  actionPosition="left" />
-        
+                  actionPosition="left" />        
           </ImageListItem>
           
         );
