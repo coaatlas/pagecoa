@@ -1914,9 +1914,57 @@ const itemData = [
         author : 'Coa Revestimientos',
     },
     {
+        id: "",
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/24.jpg?raw=true  ',
+        title: 'LaboratorioTortuguitas',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: "",
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/25.jpg?raw=true  ',
+        title: 'LaboratorioTortuguitas',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: "",
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/26.jpg?raw=true  ',
+        title: 'LaboratorioTortuguitas',
+        author : 'Coa Revestimientos',
+    },
+    {
         id: 310,
         img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/mendoza.invap/1.jpg?raw=true',
         title: 'MendozaInvap',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: "",
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/27.jpg?raw=true  ',
+        title: 'LaboratorioTortuguitas',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: "",
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/28.jpg?raw=true  ',
+        title: 'LaboratorioTortuguitas',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: "",
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/29.jpg?raw=true  ',
+        title: 'LaboratorioTortuguitas',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: "",
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/30.jpg?raw=true  ',
+        title: 'LaboratorioTortuguitas',
+        author : 'Coa Revestimientos',
+    },
+    {
+        id: "",
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/LaboratorioTortiguitas/31.jpg?raw=true  ',
+        title: 'LaboratorioTortuguitas',
         author : 'Coa Revestimientos',
     },
     {
