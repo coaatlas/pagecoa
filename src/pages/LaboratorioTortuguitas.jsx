@@ -21,9 +21,9 @@ export const LaboratorioTortuguitas = () => {
     
     titulo={"Lab. Tortuguitas"}
     subtitulo={"Pisos"}
-    descrip={"instalación de revestimientos en pisos con revestimiento vinilicos"}
+    descrip={"instalación de revestimientos en pisos con revestimiento vinilicos PVC en rollo de amstrong"}
     titulo1={"Pisos"}
-    descrip1={"instalación de revestimientos en pisos con revestimiento de vinilicos"}
+    descrip1={"instalación de revestimientos en pisos con revestimiento de vinilicos PVC en rollo de amstrong"}
     titulo2={"Caracteristicas"}
     descrip2={"Revestimiento de PVC homogéneo, de alto rendimiento, permite la construcción de áreas limpias según normas GMP Clase A"}
     titulo3={"Descripción"}
