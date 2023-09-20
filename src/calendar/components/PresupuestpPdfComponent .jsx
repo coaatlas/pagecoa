@@ -255,7 +255,7 @@ const { pedido, total, cantidad, empresa } = formValues;
                                             </td>
                                             <td className="right">
                                                 <strong>
-                                                    $ {  formValues.total * 1.21  * formValues.cantidad }
+                                                    $ {  formValues.total   * formValues.cantidad }
                                                 </strong>
                                             </td>
                                         </tr>
