@@ -4,6 +4,7 @@ import {  usePresupuestosStore, useUiStorePdf} from '../../hooks';
 import { FooterPresupuestos } from './FooterPresupuestos';
 import { useLocation } from 'react-router-dom';
 import './fabaddnewPdf.css';
+import {logo} from '../../assets/img/logo.png';
 
 
 
@@ -123,9 +124,8 @@ const formatter = new Intl.NumberFormat('es-AR', {
             <div className="col-12">
                 <div className="card" ref={componentRef } >
                     <div className="card-header bg-primary text-white">
-                        <h3 className="card-title">Coa Revestimientos |  <span  style={{ fontSize: '14px', color: 'black', fontWeight: 'bold', textAlign: 'left',  }}>Presupuesto </span> 
-                      
-                        </h3>
+                        <h3 className="card-title">Coa Revestimientos |  <span  style={{ fontSize: '14px', color: 'black', fontWeight: 'bold', textAlign: 'left',  }}>Presupuesto </span> </h3>
+                        <img src={logo} alt="logo" style={{ width: '100px', height: '100px', marginLeft: '50px' }} />
                         <span  style={{ fontSize: '14px', color: 'black', fontWeight: 'bold', textAlign: 'left',  }}>   Tel:/ 11-3313-8900 / 11-3324-9832  |  Mail: cubas_beto@hotmail.com | www.coarevestimiento.com.ar</span>
                     </div>
                     <div className="card-body">
