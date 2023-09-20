@@ -15,12 +15,11 @@ export const FooterPresupuestos = () => {
                 <span   style={{textAlign: 'left', color: 'black', fontSize: '8px' }}>Los precios son sujetos a cambios sin previo aviso</span> <br/>
                 
                 <span   style={{textAlign: 'left', color: 'black', fontSize: '8px' }}>Los precios no incluyen traslado</span> <br/>
-                <span   style={{textAlign: 'left', color: 'black', fontSize: '8px' }}>Los precios son validos por 30 dias a partir de la fecha de emision : {hoy}/{mesActual}/{year} </span> <br/>
-             
+              
 
                 <span style={{textAlign: 'left', color: 'black', fontSize: '12px' }} >El Presupuesto se respetara por 15 dias a partir de la fecha de emision : {hoy}/{mesActual}/{year} ,Pasando la fecha se ajustaran nuevamente</span> <br/>
                 <span style={{textAlign: 'left', color: 'black', fontSize: '12px' }}>Pago en efectivo 50% comienzo 50% finalización de obra</span> <br/>
-                </div>
+     </div>
    </>
   )
 }

@@ -1,6 +1,6 @@
 import React, { useEffect ,useState} from 'react'
-import { useClientStore, usePresupuestosStore, useUiStore, useUiStorePdf } from '../../hooks'
-import { onOpenDateModalPdf } from '../../store';
+import { usePresupuestosStore, useUiStore } from '../../hooks'
+
 import { ClienteEmpresaResumen } from './ClienteEmpresaResumen';
 import { ClienteResumen } from './ClienteResumen';
 import { FabAddPresupuesto } from './FabAddPresupusto';
@@ -10,12 +10,10 @@ import { PrecioResumen } from './PrecioResumen';
 import { PresupuestotModal } from './PresupuestoModal';
 import { PresupuestotModalPdf } from './PresupuestoModalPdf';
 import { ProductoResumen } from './ProductoResumen';
-import { PresupuestpPdfComponent } from './PresupuestpPdfComponent ';
+
 
 export const NuevoPresupuesto = () => {
     const { openDateModal } = useUiStore();   
-
-   // const { openDateModalPdf,  }= useUiStorePdf();
 
 const{ presupuestos , startLoadingPresupuestos,   startDeletePresupuesto, setActivePresupuesto,startSavingPresupuesto}= usePresupuestosStore ();
 
@@ -101,30 +99,14 @@ useEffect(() => {
                                             </span>    
                                         </td>    
                                         <td>
-                                            <span
-                                            type="button"
-                                            style={{cursor: 'pointer', color: 'red' }}
-                                            // onClick={() => window.open(handlePdf(item), '_blank')}>
-                                            //  onClick={() => handlePdf(item)}
-
-                                            onClick={() => padreAHijo(item)}
-                                            >
-                                               
-                                           
-                                           
-                                             
-                                          <i className="fas fa-solid fa-file-pdf"></i>
-                                            </span>    
+                                            <span  type="button" style={{cursor: 'pointer', color: 'red' }}  onClick={() => padreAHijo(item)} > <i className="fas fa-solid fa-file-pdf"></i> </span>    
                                         </td>                                                            
                                         <td>{item.pedido.map((item) => (<ProductoResumen  key={item.nombre} producto={item.nombre} />)  )} </td>
                                         <td>{item.pedido.map((item) => (<PrecioResumen  key={item.precio} precio={item.precio} />)  )} </td>
                                         <td><span style={{border: 'none',color:'green', fontSize: '0.9rem'}}>&#65284;</span><span style={{border: 'none',color:'red', fontSize: '0.9rem'}}>{item.total }</span></td>
                                         <td><span style={{border: 'none',color:'red', fontSize: '0.9rem'}}>{item.cantidad }<span style={{border: 'none',color:'green', fontSize: '0.9rem'}}><sup>( m<sup>2</sup>)</sup></span></span></td>
-                                       <td>{item.empresa.map((item) => ( <ClienteResumen  key={item.email} nombre={item.nombre} />)  ) }  </td>  
-                                        <td>{item.empresa.map((item) => ( <ClienteEmpresaResumen  key={item.empresa} empresa={item.empresa} />)  ) }
-                                            
-                                            </td>   
-                                                                 
+                                        <td>{item.empresa.map((item) => ( <ClienteResumen  key={item.email} nombre={item.nombre} />)  ) }  </td>  
+                                        <td>{item.empresa.map((item) => ( <ClienteEmpresaResumen  key={item.empresa} empresa={item.empresa} />)  ) } </td>                                                                    
                                     </tr> 
                                 ))
                             }                                       

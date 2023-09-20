@@ -16,38 +16,13 @@ export const PresupuestpPdfComponent  = (props) => {
     const { pathname } = router;
     const path = pathname.split('/');
     const id = path[2];
-    const nombre = path[3];  
+    const nombre = path[3]; 
 
-    // const url = window.location.href;
-    // const url2 = url.split('/');
-    // const url3 = url2[0];
-    // const url4 = url2[1];
-    // const url5 = url2[2];
-    // const url6 = url2[3];
-    // const url7 = url2[4];
-    // const url8 = url2[5];
-    // const url9 = url2[6];
-    // const url10 = url2[7];
-    // const url11 = url2[8];
-   
-    // var urlLimpia = url9.replace(/%20/g, " ");
-    // console.log("urlLimpia ;", urlLimpia);
-
-    // console.log(router);
-    // console.log(pathname);
-    // console.log(path);
-    // console.log(id);
-    // console.log(nombre);
-    // console.log(url);
-    // console.log(url2);  
-    // console.log(url3);
-    // console.log(url4);
-    // console.log(url5);
 
 
     const componentRef = useRef();
     const{presupuestos ,  activePresupuesto,startLoadingPresupuestos,  setActivePresupuesto  }=usePresupuestosStore();
-    // const{ isDateModalOpenPdf, closeDateModalPdf }=useUiStorePdf();
+   
 
         //fecha y hora actual
       const fecha = new Date();
@@ -69,22 +44,7 @@ useEffect(() => {
 presupuestos.forEach( presupuesto => {
     if (presupuesto.id === id) {
 
-        const pedido = presupuesto.pedido;
-    //    console.log("presupuesto", presupuesto);
-
-    //    console.log("presupuesto.pedido", presupuesto.pedido);
-    //    console.log("presupuesto.empresas", presupuesto.empresa);
-    //    console.log("presupuesto.total", presupuesto.total);
-
-      
-
-        //  console.log("pedido", pedido);
-
-        //  pedido.forEach( pedido => {
-        //         console.log("pedido.nombre", pedido.nombre);
-        //         console.log("pedido.precio", pedido.precio);
-        //     }
-        //     )
+        const pedido = presupuesto.pedido;   
     }
 })
 
@@ -129,8 +89,6 @@ const formatter = new Intl.NumberFormat('es-AR', {
     minimumFractionDigits: 2
   })
     
-
- 
 
 
 //==============================================================
@@ -230,9 +188,13 @@ const formatter = new Intl.NumberFormat('es-AR', {
                                     <tbody>
                                         <tr>
                                             <td className="left">
-                                                <strong>Subtotal valor de <sup>(mts<sup>2</sup>)</sup></strong>
+                                            <strong>valor de <sup>(mt<sup>2</sup>)</sup> con iva</strong>
                                             </td>
-                                            <td className="right">{ formatter.format( formValues.total) }</td>
+                                            {/* <td className="right">{ formatter.format( formValues.total) }</td> */}
+                                            <td className="left">
+                                                <strong>Presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup>
+                                                 <span style={{fontSize: '12px', color: 'red', fontWeight: 'bold', textAlign: 'left' } } > sin iva</span> </strong>
+                                            </td>
                                         </tr>
                                       
                                         <tr>
@@ -244,16 +206,16 @@ const formatter = new Intl.NumberFormat('es-AR', {
                                             </td>
                                         </tr>
 
-                                        <tr>
+                                        {/* <tr>
                                             <td className="left">
                                                 <strong>valor de <sup>(mt<sup>2</sup>)</sup> con iva</strong>
                                             </td>
                                             <td className="right">
                                                 <strong>{formatter.format(  formValues.total * 1.21) } </strong>
                                             </td>
-                                        </tr>
+                                        </tr> */}
 
-                                        <tr>
+                                        {/* <tr>
                                             <td className="left">
                                                 <strong>Presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup>
                                                  <span style={{fontSize: '12px', color: 'red', fontWeight: 'bold', textAlign: 'left' } } > sin iva</span> </strong>
@@ -263,7 +225,7 @@ const formatter = new Intl.NumberFormat('es-AR', {
                                                      { formatter.format( formValues.total   * formValues.cantidad )}
                                                 </strong>
                                             </td>
-                                        </tr>
+                                        </tr> */}
 
                                         <tr>
                                             <td className="left">
