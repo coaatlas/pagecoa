@@ -165,8 +165,7 @@ const formatter = new Intl.NumberFormat('es-AR', {
                         <h3 className="card-title">Coa Revestimientos |  <span  style={{ fontSize: '14px', color: 'black', fontWeight: 'bold', textAlign: 'left',  }}>Presupuesto </span> 
                       
                         </h3>
-                        <span  style={{ fontSize: '14px', color: 'black', fontWeight: 'bold', textAlign: 'left',  }}>   Tel:/
-          11-3313-8900 / 11-3324-9832  |  Mail: cubas_beto@hotmail.com | www.coarevestimiento.com.ar</span>
+                        <span  style={{ fontSize: '14px', color: 'black', fontWeight: 'bold', textAlign: 'left',  }}>   Tel:/ 11-3313-8900 / 11-3324-9832  |  Mail: cubas_beto@hotmail.com | www.coarevestimiento.com.ar</span>
                     </div>
                     <div className="card-body">
                         <div className="row">
@@ -199,12 +198,11 @@ const formatter = new Intl.NumberFormat('es-AR', {
                                                 <tr key={index}>
                                                     <td className="center">{ index + 1 }</td>
                                                     <td className="left strong">{ item.nombre } </td>
-                                                    <td className="right">$ { item.precio }<sup>(el m<sup>2</sup>)</sup></td>
+                                                    <td className="right"> { formatter.format(item.precio )}<sup>(el m<sup>2</sup>)</sup></td>
                                                     <td className="right"> { item.categoria }</td>                                                 
                                                 </tr>
                                             ))
-                                        }   
-
+                                        }  
                                     </tbody>                                    
 
                                 <tfoot>
@@ -216,7 +214,7 @@ const formatter = new Intl.NumberFormat('es-AR', {
                                     <tr  style={{ backgroundColor: 'white', color: 'black', fontWeight: 'bold', textAlign: 'left',  }} >
                                         <td colSpan="2"></td>
                                         <td className="right"><strong>Valor</strong></td>
-                                        <td className="right"><strong> $ {  formValues.total }</strong></td>
+                                        <td className="right"><strong>  { formatter.format( formValues.total) }</strong></td>
                                     </tr>
                                 </tfoot>
                             </table>
