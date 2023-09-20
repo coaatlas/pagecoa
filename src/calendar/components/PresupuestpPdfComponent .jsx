@@ -238,7 +238,7 @@ const formatter = new Intl.NumberFormat('en-Es', {
                                             <td className="left">
                                                 <strong>IVA (21%)</strong>
                                             </td>
-                                            <td className="right">$
+                                            <td className="right">
                                                 { formatter.format( formValues.total * 0.21 )}                                                
                                            
                                             </td>
@@ -250,7 +250,7 @@ const formatter = new Intl.NumberFormat('en-Es', {
                                             </td>
                                             <td className="right">
                                                 <strong>
-                                                    $ {formatter.format(  formValues.total * 1.21) }
+                                                     {formatter.format(  formValues.total * 1.21) }
 
                                                 </strong>
                                             </td>
