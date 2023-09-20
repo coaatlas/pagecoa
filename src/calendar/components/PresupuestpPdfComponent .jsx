@@ -222,7 +222,7 @@ const { pedido, total, cantidad, empresa } = formValues;
                                     <tbody>
                                         <tr>
                                             <td className="left">
-                                                <strong>Subtotal</strong>
+                                                <strong>Subtotal valor del <sup>(mts<sup>2</sup>)</sup></strong>
                                             </td>
                                             <td className="right">{  formValues.total }</td>
                                         </tr>
@@ -239,7 +239,7 @@ const { pedido, total, cantidad, empresa } = formValues;
 
                                         <tr>
                                             <td className="left">
-                                                <strong>valor del metro cuadrado</strong>
+                                                <strong>valor del <sup>(mts<sup>2</sup>)</sup> con iva</strong>
                                             </td>
                                             <td className="right">
                                                 <strong>
@@ -251,7 +251,7 @@ const { pedido, total, cantidad, empresa } = formValues;
 
                                         <tr>
                                             <td className="left">
-                                                <strong>Total presupuestado en =  formValues.cantidad</strong>
+                                                <strong>Total presupuestado en ={formValues.cantidad}<sup>(mts<sup>2</sup>)</sup> sin iva</strong>
                                             </td>
                                             <td className="right">
                                                 <strong>
@@ -260,6 +260,16 @@ const { pedido, total, cantidad, empresa } = formValues;
                                             </td>
                                         </tr>
 
+                                        <tr>
+                                            <td className="left">
+                                                <strong>Total presupuestado en ={formValues.cantidad}<sup>(mts<sup>2</sup>)</sup> con iva</strong>
+                                            </td>
+                                            <td className="right">
+                                                <strong>
+                                                    $ {  formValues.total * 1.21  * formValues.cantidad }
+                                                </strong>
+                                            </td>
+                                        </tr>
 
 
 
