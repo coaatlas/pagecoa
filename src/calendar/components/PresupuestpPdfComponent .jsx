@@ -186,7 +186,7 @@ const formatter = new Intl.NumberFormat('es-AR', {
                             <div className="col-lg-4 col-sm-5 ml-auto">
                                 <table className="table table-clear">
                                     <tbody>
-                                    * <tr>
+                                     <tr>
                                             <td className="left">
                                                 <strong>Presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup>
                                                  <span style={{fontSize: '12px', color: 'red', fontWeight: 'bold', textAlign: 'left' } } > sin iva</span> </strong>
