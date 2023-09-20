@@ -251,7 +251,9 @@ const { pedido, total, cantidad, empresa } = formValues;
 
                                         <tr>
                                             <td className="left">
-                                                <strong>Total presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup> sin iva</strong>
+                                                <strong>Total presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup> <span
+                                                style={{fontSize: '12px', color: 'red', fontWeight: 'bold', textAlign: 'left' } } 
+                                                >sin iva</span> </strong>
                                             </td>
                                             <td className="right">
                                                 <strong>
@@ -263,8 +265,9 @@ const { pedido, total, cantidad, empresa } = formValues;
                                         <tr>
                                             <td className="left">
                                                 <strong>Total presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup><span
-                                                style={{fontSize: '12px', color: 'red', fontWeight: 'bold', textAlign: 'left' } } 
-                                                >con iva</span> con iva</strong>
+                                                style={{fontSize: '12px', color: 'green', fontWeight: 'bold', textAlign: 'left' } } 
+                                                >con iva</span> 
+                                                </strong>
                                             </td>
                                             <td className="right">
                                                 <strong>
