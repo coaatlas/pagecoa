@@ -126,8 +126,11 @@ const { pedido, total, cantidad, empresa } = formValues;
 const formatter = new Intl.NumberFormat('es-AR', {
     style: 'currency',
     currency: 'ARS',
-    minimumFractionDigits: 0
+    minimumFractionDigits: 2
   })
+    
+
+ 
 
 
 //==============================================================
