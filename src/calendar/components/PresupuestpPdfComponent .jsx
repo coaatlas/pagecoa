@@ -123,7 +123,7 @@ const [formValues, setFormValues] = useState({
 
 const { pedido, total, cantidad, empresa } = formValues;
 
-const formatter = new Intl.NumberFormat('en-Es', {
+const formatter = new Intl.NumberFormat('es-AR', {
     style: 'currency',
     currency: 'ARS',
     minimumFractionDigits: 0
@@ -239,8 +239,7 @@ const formatter = new Intl.NumberFormat('en-Es', {
                                                 <strong>IVA (21%)</strong>
                                             </td>
                                             <td className="right">
-                                                { formatter.format( formValues.total * 0.21 )}                                                
-                                           
+                                                { formatter.format( formValues.total * 0.21 )}                                              
                                             </td>
                                         </tr>
 
@@ -249,10 +248,7 @@ const formatter = new Intl.NumberFormat('en-Es', {
                                                 <strong>valor de <sup>(mt<sup>2</sup>)</sup> con iva</strong>
                                             </td>
                                             <td className="right">
-                                                <strong>
-                                                     {formatter.format(  formValues.total * 1.21) }
-
-                                                </strong>
+                                                <strong>{formatter.format(  formValues.total * 1.21) } </strong>
                                             </td>
                                         </tr>
 
