@@ -10,8 +10,7 @@ export const LayoutsGaleria = ({children,titulo,subtitulo,descrip,titulo1,titulo
    
     const [items, setItems] = useState([]);
 
-   useEffect(() => {  
-        
+   useEffect(() => {          
      customFetch(2000,itemData).then((data) => setItems(data));
     }, []);
  
@@ -37,8 +36,7 @@ export const LayoutsGaleria = ({children,titulo,subtitulo,descrip,titulo1,titulo
        );
        
    }   
-   else{
- 
+   else{ 
     return (
    <>
  <div className="container-xxl py-5">

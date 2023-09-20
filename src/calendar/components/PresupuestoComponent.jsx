@@ -9,11 +9,9 @@ export const PresupuestoComponent = () => {
 
   
   return (
-<>
-   
-    
-    <PresupuestoNavBar  />
-    <NuevoPresupuesto />
+     <>  
+        <PresupuestoNavBar  />
+        <NuevoPresupuesto />
     </>
   )
 }

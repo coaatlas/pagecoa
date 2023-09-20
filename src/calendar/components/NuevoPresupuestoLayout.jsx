@@ -128,7 +128,8 @@ export const NuevoPresupuestoLayout = ({titulo,pedido,total,cliente}) => {
                 <span>Los precios son sujetos a cambios sin previo aviso</span> <br/>
                 <span>Los precios no incluyen IVA</span> <br/>
                 <span>Los precios no incluyen traslado</span> <br/>
-                <span>Los precios so validos por 30 dias a partir de la fecha de emision : {hoy}/{mesActual}/{year} </span> <br/>
+                <span>El Presupuesto se respetara por 15 dias a partir de la fecha de emision : {hoy}/{mesActual}/{year} ,Pasando la fecha se ajustaran nuevamente</span> <br/>
+                <span>Pago en efectivo 50% comienzo 50% finalización de obra</span> <br/>
                 <p className="mb-2"> <a className="fw-semi-bold"  href={url}> Coa Revestimientos</a>
                 </p>
                 </div>
