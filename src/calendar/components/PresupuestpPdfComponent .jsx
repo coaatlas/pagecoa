@@ -16,9 +16,7 @@ export const PresupuestpPdfComponent  = (props) => {
     const { pathname } = router;
     const path = pathname.split('/');
     const id = path[2];
-    const nombre = path[3];
-   
-
+    const nombre = path[3];  
 
     // const url = window.location.href;
     // const url2 = url.split('/');
@@ -31,7 +29,6 @@ export const PresupuestpPdfComponent  = (props) => {
     // const url9 = url2[6];
     // const url10 = url2[7];
     // const url11 = url2[8];
-
    
     // var urlLimpia = url9.replace(/%20/g, " ");
     // console.log("urlLimpia ;", urlLimpia);
@@ -46,7 +43,6 @@ export const PresupuestpPdfComponent  = (props) => {
     // console.log(url3);
     // console.log(url4);
     // console.log(url5);
-
 
 
     const componentRef = useRef();
@@ -127,7 +123,6 @@ const [formValues, setFormValues] = useState({
 
 const { pedido, total, cantidad, empresa } = formValues;
 
-
 //==============================================================
 
   return (
@@ -203,19 +198,15 @@ const { pedido, total, cantidad, empresa } = formValues;
                                             ))
                                         }   
 
-                                    </tbody>
-                                    
+                                    </tbody>                                    
 
                                 <tfoot>
-                                <tr
-                                style={{ backgroundColor: 'white', color: 'black', fontWeight: 'bold', textAlign: 'left',  }}
-                                >
+                                   <tr style={{ backgroundColor: 'white', color: 'black', fontWeight: 'bold', textAlign: 'left',  }}>
                                         <td colSpan="2"></td>
                                         <td className="right"><strong>Cantidad</strong></td>
                                         <td className="right"><strong>  {  formValues.cantidad }<sup>(mts<sup>2</sup>)</sup></strong></td>
                                     </tr>
-                                    <tr  style={{ backgroundColor: 'white', color: 'black', fontWeight: 'bold', textAlign: 'left',  }}
-                                    >
+                                    <tr  style={{ backgroundColor: 'white', color: 'black', fontWeight: 'bold', textAlign: 'left',  }} >
                                         <td colSpan="2"></td>
                                         <td className="right"><strong>Valor</strong></td>
                                         <td className="right"><strong> $ {  formValues.total }</strong></td>
@@ -245,9 +236,10 @@ const { pedido, total, cantidad, empresa } = formValues;
                                            
                                             </td>
                                         </tr>
+
                                         <tr>
                                             <td className="left">
-                                                <strong>Total</strong>
+                                                <strong>valor del metro cuadrado</strong>
                                             </td>
                                             <td className="right">
                                                 <strong>
@@ -256,6 +248,23 @@ const { pedido, total, cantidad, empresa } = formValues;
                                                 </strong>
                                             </td>
                                         </tr>
+
+                                        <tr>
+                                            <td className="left">
+                                                <strong>Total presupuestado en =  formValues.cantidad</strong>
+                                            </td>
+                                            <td className="right">
+                                                <strong>
+                                                    $ {  formValues.total * 1.21  * formValues.cantidad }
+                                                </strong>
+                                            </td>
+                                        </tr>
+
+
+
+
+
+
                                     </tbody>
                                 </table>
                             </div>

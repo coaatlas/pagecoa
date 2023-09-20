@@ -44,10 +44,8 @@ const [item, estableceDatos] = useState('');
 
 const padreAHijo = (item) => {
     estableceDatos(item);
-
     const { id   } = item;
     setActivePresupuesto(item) 
-
     window.open(`/#/presupuestopdf/${id}`, '_blank')
   }
 
@@ -110,8 +108,6 @@ useEffect(() => {
                                             //  onClick={() => handlePdf(item)}
 
                                             onClick={() => padreAHijo(item)}
-
-
                                             >
                                                
                                            

@@ -10,8 +10,6 @@ export const PresupuestoPdfGenerar = () => {
     <br/>
     <br/>
 
-
-
    <PresupuestpPdfComponent />
    
    </>
