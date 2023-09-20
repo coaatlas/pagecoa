@@ -231,7 +231,7 @@ const formatter = new Intl.NumberFormat('en-Es', {
                                             <td className="left">
                                                 <strong>Subtotal valor de <sup>(mts<sup>2</sup>)</sup></strong>
                                             </td>
-                                            <td className="right">{  formValues.total }</td>
+                                            <td className="right">{ formatter.format( formValues.total) }</td>
                                         </tr>
                                       
                                         <tr>
@@ -239,7 +239,7 @@ const formatter = new Intl.NumberFormat('en-Es', {
                                                 <strong>IVA (21%)</strong>
                                             </td>
                                             <td className="right">$
-                                                {  formValues.total * 0.21 }                                                
+                                                { formatter.format( formValues.total * 0.21 )}                                                
                                            
                                             </td>
                                         </tr>
@@ -250,7 +250,7 @@ const formatter = new Intl.NumberFormat('en-Es', {
                                             </td>
                                             <td className="right">
                                                 <strong>
-                                                    $ {  formValues.total * 1.21 }
+                                                    $ {formatter.format(  formValues.total * 1.21) }
 
                                                 </strong>
                                             </td>
@@ -258,26 +258,26 @@ const formatter = new Intl.NumberFormat('en-Es', {
 
                                         <tr>
                                             <td className="left">
-                                                <strong>Total presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup>
+                                                <strong>Presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup>
                                                  <span style={{fontSize: '12px', color: 'red', fontWeight: 'bold', textAlign: 'left' } } > sin iva</span> </strong>
                                             </td>
                                             <td className="right">
                                                 <strong>
-                                                    $ {  formValues.total   * formValues.cantidad }
+                                                     { formatter.format( formValues.total   * formValues.cantidad )}
                                                 </strong>
                                             </td>
                                         </tr>
 
                                         <tr>
                                             <td className="left">
-                                                <strong>Total presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup>
+                                                <strong>Presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup>
                                                 <span style={{fontSize: '12px', color: 'green', fontWeight: 'bold', textAlign: 'left' } } > con iva</span> 
                                                 </strong>
                                             </td>
                                             <td className="right">
                                                 <strong>
 
-                                                    $   {  formatter.format( formValues.total * 1.21  * formValues.cantidad ) }
+                                                      {  formatter.format( formValues.total * 1.21  * formValues.cantidad ) }
                                                    
                                                 </strong>
                                             </td>
