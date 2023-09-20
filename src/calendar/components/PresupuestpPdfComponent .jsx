@@ -123,6 +123,13 @@ const [formValues, setFormValues] = useState({
 
 const { pedido, total, cantidad, empresa } = formValues;
 
+const formatter = new Intl.NumberFormat('en-Es', {
+    style: 'currency',
+    currency: 'ARS',
+    minimumFractionDigits: 0
+  })
+
+
 //==============================================================
 
   return (
@@ -239,7 +246,7 @@ const { pedido, total, cantidad, empresa } = formValues;
 
                                         <tr>
                                             <td className="left">
-                                                <strong>valor de <sup>(mts<sup>2</sup>)</sup> con iva</strong>
+                                                <strong>valor de <sup>(mt<sup>2</sup>)</sup> con iva</strong>
                                             </td>
                                             <td className="right">
                                                 <strong>
@@ -251,9 +258,8 @@ const { pedido, total, cantidad, empresa } = formValues;
 
                                         <tr>
                                             <td className="left">
-                                                <strong>Total presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup> <span
-                                                style={{fontSize: '12px', color: 'red', fontWeight: 'bold', textAlign: 'left' } } 
-                                                >sin iva</span> </strong>
+                                                <strong>Total presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup>
+                                                 <span style={{fontSize: '12px', color: 'red', fontWeight: 'bold', textAlign: 'left' } } > sin iva</span> </strong>
                                             </td>
                                             <td className="right">
                                                 <strong>
@@ -264,21 +270,18 @@ const { pedido, total, cantidad, empresa } = formValues;
 
                                         <tr>
                                             <td className="left">
-                                                <strong>Total presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup><span
-                                                style={{fontSize: '12px', color: 'green', fontWeight: 'bold', textAlign: 'left' } } 
-                                                >con iva</span> 
+                                                <strong>Total presupuestado en {formValues.cantidad}<sup>(mts<sup>2</sup>)</sup>
+                                                <span style={{fontSize: '12px', color: 'green', fontWeight: 'bold', textAlign: 'left' } } > con iva</span> 
                                                 </strong>
                                             </td>
                                             <td className="right">
                                                 <strong>
-                                                    $ {  formValues.total * 1.21  * formValues.cantidad }
+
+                                                    $   {  formatter.format( formValues.total * 1.21  * formValues.cantidad ) }
+                                                   
                                                 </strong>
                                             </td>
                                         </tr>
-
-
-
-
 
                                     </tbody>
                                 </table>
@@ -289,18 +292,9 @@ const { pedido, total, cantidad, empresa } = formValues;
                 </div>
             </div>
         </div>
-    </div>
-
-
+    </div>               
                                     
-                                      
-
-
-
-                                        
-
-    
-    
+   
     
     </>
   )
