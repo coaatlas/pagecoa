@@ -4,6 +4,7 @@ import {  usePresupuestosStore, useUiStorePdf} from '../../hooks';
 import { FooterPresupuestos } from './FooterPresupuestos';
 import { useLocation } from 'react-router-dom';
 import './fabaddnewPdf.css';
+import { LogoHtmlCss } from './logo/LogoHtmlCss';
 
 
 
@@ -123,7 +124,8 @@ const formatter = new Intl.NumberFormat('es-AR', {
         <div className="row">
             <div className="col-12">
                 <div className="card" ref={componentRef } >
-                <img src="https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/logo.png?raw=true"  alt="logo" style={{ width: '100px', height: '100px', marginLeft: '50px' }} />
+                    <LogoHtmlCss />
+
                     <div className="card-header bg-primary text-white">
                         <h3 className="card-title">Coa Revestimientos |  <span  style={{ fontSize: '14px', color: 'black', fontWeight: 'bold', textAlign: 'left',  }}>Presupuesto </span> </h3>
                     
