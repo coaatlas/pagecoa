@@ -10,7 +10,7 @@ export const LogoHtmlCss = () => {
                 <ul>
                     <li>
                         <div class="logo-holder logo-3">
-                            <a href="">
+                            <a href="https://www.coarevestimiento.com.ar/#/presupuesto">
                                 <h3>COA REVESTIMIENTOS</h3>
                                 <p>www.coarevestimiento.com.ar</p>
                             </a>
