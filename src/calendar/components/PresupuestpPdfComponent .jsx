@@ -124,7 +124,10 @@ const formatter = new Intl.NumberFormat('es-AR', {
         <div className="row">
             <div className="col-12">
                 <div className="card" ref={componentRef } >
+                    <div style={{ textAlign: 'center' }}>
                     <LogoHtmlCss />
+                    </div>
+                  
 
                     <div className="card-header bg-primary text-white">
                         <h3 className="card-title">Coa Revestimientos |  <span  style={{ fontSize: '14px', color: 'black', fontWeight: 'bold', textAlign: 'left',  }}>Presupuesto </span> </h3>

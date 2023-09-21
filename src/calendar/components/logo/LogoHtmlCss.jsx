@@ -13,8 +13,8 @@ export const LogoHtmlCss = () => {
     <li>
       <div class="logo-holder logo-3">
         <a href="">
-          <h3>Lorem Ipsum</h3>
-          <p>dolor sit amet</p>
+          <h3>COA REVESTIMIENTOS</h3>
+          <p>www.coarevestimiento.com.ar</p>
         </a>
       </div>
     </li>
