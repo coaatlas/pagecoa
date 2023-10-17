@@ -12,6 +12,8 @@ import video6 from '../../assets/img/tortuguitas/4.mp4';
 import video7 from '../../assets/img/bavio/1.mp4';
 import video8 from '../../assets/img/bavio/2.mp4';
 import video9 from '../../assets/img/bavio/3.mp4';
+import video10 from '../../assets/img/hospinavarro/1navarro.mp4';
+import video11 from '../../assets/img/hospinavarro/2navarro.mp4';
 
 import './videocontenido.css'
 
@@ -47,6 +49,27 @@ export const CoaVideoContenido = () => {
       <div className="container ">
           <div className="row justify-content-center">
           <h2 className="mb-4">Nuestros Videos</h2>
+
+          <div className="col-md-4">                
+                 <div className='vidContain'>
+                        <div className='vid'>
+                               <video width="370" height="400" autoPlay={true} loop={false} muted={true} >
+                                                 <source src={video10} type="video/mp4" ></source>
+                                </video>                  
+                        </div>           
+                    </div>                      
+              </div>
+
+
+          <div className="col-md-4">                
+                 <div className='vidContain'>
+                        <div className='vid'>
+                               <video width="370" height="400" autoPlay={true} loop={false} muted={true} >
+                                                 <source src={video11} type="video/mp4" ></source>
+                                </video>                  
+                        </div>           
+                    </div>                      
+              </div>
 
           <div className="col-md-4">                
                  <div className='vidContain'>

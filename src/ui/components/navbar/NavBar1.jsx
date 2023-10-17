@@ -214,6 +214,7 @@ export const NavBar1 = () => {
   <NavLink    to="/laboratoriowiizur"          className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Lab Weizur</button></NavLink >
   <NavLink    to="/ollersolano"                className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Hosp. Oller </button></NavLink >
   <NavLink    to="/centro-radiologico-formosa" className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Rad. Formosa</button></NavLink >
+  <NavLink    to="/hospital-navarro"           className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Hosp. Navarro</button></NavLink >
  
   </div>
 </div>
