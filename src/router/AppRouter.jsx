@@ -36,7 +36,8 @@ import { Baradero,
          ClinicaInvap,
          LaboratorioWiizur,
          OllerSolano,
-         CentroRadiologicoFormosa, 
+         CentroRadiologicoFormosa,
+         HospitalNavarro, 
        
       
          } from "../pages"
@@ -115,6 +116,7 @@ export const AppRouter = () => {
         <Route path="/laboratoriowiizur" element={<LaboratorioWiizur/>} />
         <Route path="/ollersolano" element={<OllerSolano/>} />
         <Route path="/centro-radiologico-formosa" element={<CentroRadiologicoFormosa />} />
+        <Route path="/hospital-navarro" element={<HospitalNavarro />} />
         <Route path="/videoscoa" element={<CoaVideos />} />   
         <Route path="/blog" element={<BlogPage />} />   
         <Route path="/contact" element={<Contact />} />        
@@ -146,6 +148,7 @@ export const AppRouter = () => {
            <Route path="/laboratoriowiizur" element={<LaboratorioWiizur/>} />
            <Route path="/ollersolano" element={<OllerSolano/>} />
            <Route path="/centro-radiologico-formosa" element={<CentroRadiologicoFormosa />} />
+           <Route path="/hospital-navarro" element={<HospitalNavarro />} />
            <Route path="/videoscoa" element={<CoaVideos />} />   
            <Route path="/contact" element={<Contact />} /> 
            <Route path="/login" element={<LoginPages />} />

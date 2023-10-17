@@ -29,6 +29,7 @@ export * from './ClinicaInvap';
 export * from './LaboratorioWiizur';
 export * from './OllerSolano';
 export * from './CentroRadiologicoFormosa';
+export * from './HospitalNavarro';
 
                
 
