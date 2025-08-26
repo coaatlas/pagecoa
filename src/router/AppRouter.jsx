@@ -150,7 +150,7 @@ export const AppRouter = () => {
            <Route path="/ollersolano" element={<OllerSolano/>} />
            <Route path="/centro-radiologico-formosa" element={<CentroRadiologicoFormosa />} />
            <Route path="/hospital-navarro" element={<HospitalNavarro />} />
-            <Route path="/clinica-viedma" element={<ClinicaViedma />} />
+           <Route path="/clinica-viedma" element={<ClinicaViedma />} />
            <Route path="/videoscoa" element={<CoaVideos />} />   
            <Route path="/contact" element={<Contact />} /> 
            <Route path="/login" element={<LoginPages />} />

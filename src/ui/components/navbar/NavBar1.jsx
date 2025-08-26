@@ -2,8 +2,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import './navbar.css'
 import MenuIcon from '@mui/icons-material/Menu';
-import confetti from 'canvas-confetti';
-import SportsSoccerIcon from '@mui/icons-material/SportsSoccer';
 import { useAuthStore } from '../../../hooks';
 
 export const NavBar1 = () => {
@@ -215,7 +213,8 @@ export const NavBar1 = () => {
   <NavLink    to="/ollersolano"                className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Hosp. Oller </button></NavLink >
   <NavLink    to="/centro-radiologico-formosa" className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Rad. Formosa</button></NavLink >
   <NavLink    to="/hospital-navarro"           className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Hosp. Navarro</button></NavLink >
- 
+  <NavLink    to="/clinica-viedma"             className={ ({ isActive }) => `nav-link-drop  dropdownn  ${isActive ? 'active':''}` } ><button className="btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">Clinica Viedma</button></NavLink >
+
   </div>
 </div>
 
