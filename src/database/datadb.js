@@ -3275,30 +3275,154 @@ const itemData = [
     },
     {
         id: 525,
-        img: '',
-        title: '',
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/1.jpeg?raw=true',
+        title: 'clinicaViedma',
         author: 'Coa Revestimientos',
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    {
+        id: 526,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/2.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 527,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/3.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 528,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/4.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 529,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/5.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 530,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/6.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 531,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/7.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 532,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/8.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 533,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/9.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 534,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/10.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 535,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/11.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 536,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/12.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 537,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/13.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 538,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/14.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 539,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/15.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 540,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/16.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 541,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/17.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 542,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/18.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 543,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/19.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 544,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/20.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 545,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/21.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 546,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/22.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 547,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/23.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 548,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/24.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    },
+    {
+        id: 549,
+        img: 'https://github.com/coaatlas/pagecoa/blob/master/src/assets/img/clinicaViedma/25.jpeg?raw=true',
+        title: 'clinicaViedma',
+        author: 'Coa Revestimientos',
+    }
 ];
 
 export default itemData;
