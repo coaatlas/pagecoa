@@ -30,6 +30,7 @@ export * from './LaboratorioWiizur';
 export * from './OllerSolano';
 export * from './CentroRadiologicoFormosa';
 export * from './HospitalNavarro';
+export * from './ClinicaViedma';
 
                
 
