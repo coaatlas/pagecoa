@@ -1,0 +1,45 @@
+table.responsivegene {
+    border: 1px solid rgb(7, 7, 7);
+    color: #000000;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+ }
+table.responsivegene thead {background-color: #1a3369;color: #ffffff;}
+table.responsivegene tr {border: 1px solid rgb(17, 16, 16);padding: 5px; }
+table.responsivegene th, table td {
+   padding: 10px;
+   text-align: center;
+    border: 1px solid rgb(17, 16, 16);
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+  
+}
+table.responsivegene th {text-transform: uppercase;font-size: 14px;letter-spacing: 1px;}
+
+@media screen and (max-width: 768px) {
+    table.responsivegene {border: 0;}
+    table.responsivegene thead {display: none;}
+    table.responsivegene tr {margin-bottom: 10px;display: block;border-bottom: 2px solid #0c0b0b;}
+    table.responsivegene td {display: block;text-align: right;font-size: 13px;border-bottom: 1px dotted #0c0a0a;}
+    table.responsivegene td:last-child { border-bottom: 0;}
+    table.responsivegene th, table td {
+      padding: 8px;
+      text-align: center;
+       border: 1px solid rgb(17, 16, 16);
+       border-collapse: collapse;
+       border-spacing: 0;
+       font-size: 10px;
+       font-family: 'Roboto', sans-serif;
+       font-weight: 400;
+       line-height: 1.5;
+     
+   }
+    table.responsivegene td:before {content: attr(data-label);float: left;text-transform: uppercase;font-weight: bold;}
+  }
