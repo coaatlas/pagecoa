@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { BannerPortfolio } from '../../ui'
 import { CoaVideoContenido } from './CoaVideoContenido'
 
